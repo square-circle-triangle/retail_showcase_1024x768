@@ -1,0 +1,285 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="showcase_gallery preload no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="showcase_gallery preload no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="showcase_gallery preload no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="showcase_gallery preload no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="keywords" content="= keywords %>">
+		<meta name="description" content="= description ">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+		<title>showcase_gallery = title </title>
+		
+		<link rel="stylesheet" href="css/style.css">
+	    <!-- <%# if @mode == 'edit' %> -->
+			<!-- <link rel="stylesheet" href="css/blocks.css"> -->
+	  	<!-- <%# else %> -->
+			<script src="js/libs/modernizr-2.6.2.custom.min.js"></script>
+	  	<!-- <%# end %> -->
+
+
+
+	  	<!--
+	  	<%#
+			primary_color = @page.site.extra_attributes.find_by_name("Menu and Buttons").try(:value) || '#FDB415'
+			primary_text_color = @page.site.extra_attributes.find_by_name("Text on Menu and Buttons").try(:value) || '#fff'
+
+			secondary_color = @page.site.extra_attributes.find_by_name("Background Colour").try(:value) || '#10BDE7'
+			secondary_text_color = @page.site.extra_attributes.find_by_name("Text on Background Colour").try(:value) || '#fff'
+		%>
+		-->
+		<style>
+			.custom_foreground_color
+			{
+				/*color: <%= primary_color %>;*/
+				color: rgba(100,200,50,1);
+			}
+
+			.custom_background_color
+			{
+				/*background-color: <%= primary_color %>;*/
+				background-color: rgba(100,200,50,0.4);
+			}
+
+			
+		</style>
+
+
+
+
+
+		<script>
+			//var site_name = '<%= @page.site.name.clean %>';
+		</script>
+
+
+	</head><!--======================================================
+		retail_showcase_768x1024
+		showcase_gallery
+	=======================================================--><body>
+		<!-- element used for page transitions -->
+		<div class="page_load_transition"></div>
+		<!-- element used for popup lightboxes etc.. -->
+		<div class="fade"></div>
+
+		<!-- info panel for optional info ('extra') buttons within gallery -->
+		<div id="info_panel" class="info_panel">
+			<div class="panel_banner">
+				<span class="heading custom_foreground_color">Panel heading</span>
+				<div class="close"></div>
+			</div> <!-- end panel banner -->
+
+			<div class="textual_content">
+				
+				<span class="sub_heading custom_foreground_color">item description &amp; features</span>
+				<div class="copy no_linking"><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p></div>
+			</div> <!-- end textual content -->
+
+			<div class="image_content">
+				<img src="img/placeholders/products_250x330.jpg" width="250" height="330"/>
+			</div> <!-- end image content -->
+
+		</div>
+
+
+
+		<div id="container" class="container" >
+
+			
+
+
+			<div class="gallery">
+
+				<div class="slide_wrap">
+
+
+
+				
+					<div class="gallery_item slide left">
+						<img src="img/placeholders/products_768x745.jpg" width="768" height="745"/>
+						<div class="text_panel custom_background_color nav_animation">
+							<span class="line_1">new offer</span>
+							<div class="price_div">
+								<span class="price_sign">$</span>
+								<span class="price_dollars">990</span>
+								<span class="price_point">.</span>
+								<span class="price_cents">90</span>
+							</div>
+							<span class="line_2">*for two</span>
+						</div>
+						<!-- optional graphic button for extra action -->
+						<div class="extra pop">
+							<div class="info_for_popup">
+								<span class="heading">Panel heading</span>
+								<span class="sub_heading">item description &amp; features</span>
+								<div class="copy"><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel <a href="http://www.apple.com">LINK TEST</a> suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in <strong>feugiat sollicitudin</strong> eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p></div>
+								
+							</div>
+							<img src="img/placeholders/extra_240x240.png" width="240" height="240"/>
+						</div>
+					</div> <!-- end gallery item -->
+
+
+					<div class="gallery_item slide left">
+						<img src="img/placeholders/products_768x745.jpg" width="768" height="745"/>
+						<div class="text_panel custom_background_color nav_animation">
+							<span class="line_1">new offer 2</span>
+							<div class="price_div">
+								<span class="price_sign">$</span>
+								<span class="price_dollars">790</span>
+								<span class="price_point">.</span>
+								<span class="price_cents">90</span>
+							</div>
+							<span class="line_2">*for two</span>
+						</div>
+						<!-- optional graphic button for extra action -->
+						<div class="extra">
+							<a href="http://www.apple.com">
+								<img src="img/placeholders/extra_240x240.png" width="240" height="240"/>
+							</a>
+						</div>
+					</div> <!-- end gallery item -->
+
+
+					<div class="gallery_item slide left">
+						<img src="img/placeholders/products_768x745.jpg" width="768" height="745"/>
+						<div class="text_panel custom_background_color nav_animation">
+							<span class="line_1">new offer 2</span>
+							<div class="price_div">
+								<span class="price_sign">$</span>
+								<span class="price_dollars">790</span>
+								<span class="price_point">.</span>
+								<span class="price_cents">90</span>
+							</div>
+							<span class="line_2">*for two</span>
+						</div>
+						<!-- optional graphic button for extra action -->
+						<div class="extra">
+							<a href="#">
+								<img src="img/placeholders/extra_240x240.png" width="240" height="240"/>
+							</a>
+						</div>
+					</div> <!-- end gallery item -->
+
+
+
+				</div> <!-- end slide_wrap -->
+
+			</div> <!-- end gallery -->
+			
+			
+
+
+
+			<!-- TOP NAVIGATION START -->
+			<div class="top_nav nav_animation">
+				<div id="top_nav_trigger" class="show_menu ccsBgAni_half">
+					<span class="menu_title custom_foreground_color">Menu</span>
+				</div>
+				<div class="current_page_div">
+					<span class="current_page">Title of this page</span>
+				</div>
+			</div>
+			<ul id="top_nav_content" class="top_nav_content nav_animation">
+				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
+				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
+				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
+				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
+				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
+			</ul>
+			<!-- TOP NAVIGATION END -->
+
+
+
+
+			<!-- BOTTOM (MAIN) NAVIGATION START -->
+			<div class="bottom_nav nav_animation">
+				<div id="bottom_nav_trigger" class="show_menu ccsBgAni_half">
+					<span class="menu_title custom_foreground_color">Main Menu</span>
+				</div>
+				
+			</div>
+			<ul id="bottom_nav_content" class="bottom_nav_content nav_animation">
+				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
+				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
+				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
+				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
+				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
+			</ul>
+			<!-- BOTTOM (MAIN) NAVIGATION END -->
+
+
+
+
+
+
+			<div class="footer_panel">
+				<div class="footer_section">
+					<span class="title custom_foreground_color">advertisement</span>
+					<div class="advert_image_div">
+						<img src="img/placeholders/advertise_217x136.jpg" width="217" height="136"/>
+					</div>
+				</div>
+
+				<div class="footer_section">
+					<span class="title custom_foreground_color">loyalty rewards signup</span>
+					<div class="small_form_div">
+							<span class="cancel_form_indicator">close | x</span>
+
+							<form data-stats="submit" method="POST" action="" id="standard_form" class="standard_form small_standard_form clearfix" autocomplete="off">
+
+							<div class="form_action" style="display:none;"><%= form_action_url('rewards signup') %>.json</div>
+
+							
+
+							<div class="input first full">
+								<input id="email" type="email" value="" class="email required" name="email"  placeholder="email..." autocomplete="off">
+							</div>
+
+							<div class="input submit_div">
+								<input id="submit_email" type="submit" value=""/>
+						    </div>
+
+
+						    <div class="clearfix"></div>
+							
+							<span class="form_text">20% off all products for members.</span>
+
+						</form>
+						<!-- This will be appended by js on success -->
+						<!-- <div id="thanksDiv"><div class="custom_background_color"><span>Thanks for signing up!</span></div></div> -->
+					</div>
+				</div>
+
+				<div class="footer_section">
+					<span class="title custom_foreground_color">advertisement</span>
+					<div class="advert_image_div">
+						<img src="img/placeholders/advertise_217x136.jpg" width="217" height="136"/>
+					</div>
+				</div>
+
+
+				<div class="logo_div">
+					<img src="img/placeholders/logo_217x60.png" width="217" height="60"/>
+				</div>
+			</div>
+
+
+
+			
+			
+		</div> <!-- end of #container -->
+
+
+
+		
+		<!-- <%#= render :region => 'helpers' %> -->
+
+		<script src="js/libs/jquery-1.8.1.min.js"></script>
+		<script src="js/libs/jquery-ui-1.9.0.custom.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
