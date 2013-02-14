@@ -68,6 +68,11 @@
 
 		<div id="container" class="container" >
 
+			<% if @mode == 'edit' %>
+				<div class="blocks_notes type_2">
+					<p>Site colors are changed via site attributes<br/>[site admin] > [site attributes]<br/><br/>Forground colors for text are set in the 'Site foreground color (text)' field<br/>Background colors for panels are set in the 'Site background color (panels)' field.</p>
+				</div>
+			<% end %>
 			
 			<div class="gallery noselect">
 
