@@ -18,12 +18,12 @@
 
 	  	<!-- sitewide color styles -->
 	  	<%
+	  		primary_fg_color = @page.site.extra_attributes.find_by_name("Site foreground color (text)").try(:value) || '#C500D6'
 			primary_bg_color = @page.site.extra_attributes.find_by_name("Site background color (panels)").try(:value) || '#C500D6'
-			primary_fg_color = @page.site.extra_attributes.find_by_name("Site foreground color (text)").try(:value) || '#C500D6'
 		%>
 		<style>
-			.custom_foreground_color { color: <%= primary_color %>; }
-			.custom_background_color { background-color: <%= primary_color %>; }
+			.custom_foreground_color { color: <%= primary_fg_color %>; }
+			.custom_background_color { background-color: <%= primary_bg_color %>; }
 		</style>
 
 
