@@ -1,0 +1,193 @@
+					<div class="gallery_item slide left">
+						<img src="img/placeholders/x3.jpg" width="768" height="745"/>
+						<div class="text_panel custom_background_color nav_animation">
+							<span class="line_1">new offer</span>
+							<div class="price_div">
+								<span class="price_sign">$</span>
+								<span class="price_dollars">990</span>
+								<span class="price_point">.</span>
+								<span class="price_cents">90</span>
+							</div>
+							<span class="line_2">*for two</span>
+						</div>
+						<!-- optional graphic button for extra action -->
+						<div class="extra pop">
+							<div class="info_for_popup">
+								<span class="heading">Panel heading</span>
+								<span class="sub_heading">item description &amp; features</span>
+								<div class="copy"><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel <a href="http://www.apple.com">LINK TEST</a> suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in <strong>feugiat sollicitudin</strong> eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p></div>
+								<img src="img/placeholders/x3c.jpg" width="250" height="380"/>
+							</div>
+							<img src="img/placeholders/x3b.jpg" width="240" height="240"/>
+						</div>
+					</div> <!-- end gallery item -->
+
+					<div class="gallery_item slide left">
+						<img src="img/placeholders/x4.jpg" width="768" height="745"/>
+						<div class="text_panel custom_background_color nav_animation">
+							<span class="line_1">new offer</span>
+							<div class="price_div">
+								<span class="price_sign">$</span>
+								<span class="price_dollars">990</span>
+								<span class="price_point">.</span>
+								<span class="price_cents">90</span>
+							</div>
+							<span class="line_2">*for two</span>
+						</div>
+						<!-- optional graphic button for extra action -->
+						<div class="extra pop">
+							<div class="info_for_popup">
+								<span class="heading">Panel heading</span>
+								<span class="sub_heading">item description &amp; features</span>
+								<div class="copy"><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel <a href="http://www.apple.com">LINK TEST</a> suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in <strong>feugiat sollicitudin</strong> eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p></div>
+								<img src="img/placeholders/x4c.jpg" width="250" height="380"/>
+							</div>
+							<img src="img/placeholders/x4b.jpg" width="240" height="240"/>
+						</div>
+					</div> <!-- end gallery item -->
+
+					<div class="gallery_item slide left">
+						<img src="img/placeholders/x5.jpg" width="768" height="745"/>
+						<div class="text_panel custom_background_color nav_animation">
+							<span class="line_1">new offer</span>
+							<div class="price_div">
+								<span class="price_sign">$</span>
+								<span class="price_dollars">990</span>
+								<span class="price_point">.</span>
+								<span class="price_cents">90</span>
+							</div>
+							<span class="line_2">*for two</span>
+						</div>
+						<!-- optional graphic button for extra action -->
+						<div class="extra pop">
+							<div class="info_for_popup">
+								<span class="heading">Panel heading</span>
+								<span class="sub_heading">item description &amp; features</span>
+								<div class="copy"><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel <a href="http://www.apple.com">LINK TEST</a> suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in <strong>feugiat sollicitudin</strong> eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p></div>
+								<img src="img/placeholders/x5c.jpg" width="250" height="380"/>
+							</div>
+							<img src="img/placeholders/x5b.jpg" width="240" height="240"/>
+						</div>
+					</div> <!-- end gallery item -->
+
+					<div class="gallery_item slide left">
+						<img src="img/placeholders/x6.jpg" width="768" height="745"/>
+						<div class="text_panel custom_background_color nav_animation">
+							<span class="line_1">new offer</span>
+							<div class="price_div">
+								<span class="price_sign">$</span>
+								<span class="price_dollars">990</span>
+								<span class="price_point">.</span>
+								<span class="price_cents">90</span>
+							</div>
+							<span class="line_2">*for two</span>
+						</div>
+						<!-- optional graphic button for extra action -->
+						<div class="extra pop">
+							<div class="info_for_popup">
+								<span class="heading">Panel heading</span>
+								<span class="sub_heading">item description &amp; features</span>
+								<div class="copy"><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel <a href="http://www.apple.com">LINK TEST</a> suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in <strong>feugiat sollicitudin</strong> eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p></div>
+								<img src="img/placeholders/x6c.jpg" width="250" height="380"/>
+							</div>
+							<img src="img/placeholders/x6b.jpg" width="240" height="240"/>
+						</div>
+					</div> <!-- end gallery item -->
+
+					<div class="gallery_item slide left">
+						<img src="img/placeholders/x7.jpg" width="768" height="745"/>
+						<div class="text_panel custom_background_color nav_animation">
+							<span class="line_1">new offer</span>
+							<div class="price_div">
+								<span class="price_sign">$</span>
+								<span class="price_dollars">990</span>
+								<span class="price_point">.</span>
+								<span class="price_cents">90</span>
+							</div>
+							<span class="line_2">*for two</span>
+						</div>
+						<!-- optional graphic button for extra action -->
+						<div class="extra pop">
+							<div class="info_for_popup">
+								<span class="heading">Panel heading</span>
+								<span class="sub_heading">item description &amp; features</span>
+								<div class="copy"><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel <a href="http://www.apple.com">LINK TEST</a> suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in <strong>feugiat sollicitudin</strong> eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p></div>
+								<img src="img/placeholders/x7c.jpg" width="250" height="380"/>
+							</div>
+							<img src="img/placeholders/x7b.jpg" width="240" height="240"/>
+						</div>
+					</div> <!-- end gallery item -->					
+
+
+
+					<div class="gallery_item slide left">
+						<img src="img/placeholders/x8.jpg" width="768" height="745"/>
+						<div class="text_panel custom_background_color nav_animation">
+							<span class="line_1">new offer</span>
+							<div class="price_div">
+								<span class="price_sign">$</span>
+								<span class="price_dollars">990</span>
+								<span class="price_point">.</span>
+								<span class="price_cents">90</span>
+							</div>
+							<span class="line_2">*for two</span>
+						</div>
+						<!-- optional graphic button for extra action -->
+						<div class="extra pop">
+							<div class="info_for_popup">
+								<span class="heading">Panel heading</span>
+								<span class="sub_heading">item description &amp; features</span>
+								<div class="copy"><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel <a href="http://www.apple.com">LINK TEST</a> suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in <strong>feugiat sollicitudin</strong> eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p></div>
+								<img src="img/placeholders/x8c.jpg" width="250" height="380"/>
+							</div>
+							<img src="img/placeholders/x8b.jpg" width="240" height="240"/>
+						</div>
+					</div> <!-- end gallery item -->
+
+					<div class="gallery_item slide left">
+						<img src="img/placeholders/x9.jpg" width="768" height="745"/>
+						<div class="text_panel custom_background_color nav_animation">
+							<span class="line_1">new offer</span>
+							<div class="price_div">
+								<span class="price_sign">$</span>
+								<span class="price_dollars">990</span>
+								<span class="price_point">.</span>
+								<span class="price_cents">90</span>
+							</div>
+							<span class="line_2">*for two</span>
+						</div>
+						<!-- optional graphic button for extra action -->
+						<div class="extra pop">
+							<div class="info_for_popup">
+								<span class="heading">Panel heading</span>
+								<span class="sub_heading">item description &amp; features</span>
+								<div class="copy"><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel <a href="http://www.apple.com">LINK TEST</a> suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in <strong>feugiat sollicitudin</strong> eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p></div>
+								<img src="img/placeholders/x9c.jpg" width="250" height="380"/>
+							</div>
+							<img src="img/placeholders/x9b.jpg" width="240" height="240"/>
+						</div>
+					</div> <!-- end gallery item -->
+
+					<div class="gallery_item slide left">
+						<img src="img/placeholders/x10.jpg" width="768" height="745"/>
+						<div class="text_panel custom_background_color nav_animation">
+							<span class="line_1">new offer</span>
+							<div class="price_div">
+								<span class="price_sign">$</span>
+								<span class="price_dollars">990</span>
+								<span class="price_point">.</span>
+								<span class="price_cents">90</span>
+							</div>
+							<span class="line_2">*for two</span>
+						</div>
+						<!-- optional graphic button for extra action -->
+						<div class="extra pop">
+							<div class="info_for_popup">
+								<span class="heading">Panel heading</span>
+								<span class="sub_heading">item description &amp; features</span>
+								<div class="copy"><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p><p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel <a href="http://www.apple.com">LINK TEST</a> suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in <strong>feugiat sollicitudin</strong> eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p></div>
+								<img src="img/placeholders/x10c.jpg" width="250" height="380"/>
+							</div>
+							<img src="img/placeholders/x10b.jpg" width="240" height="240"/>
+						</div>
+					</div> <!-- end gallery item -->

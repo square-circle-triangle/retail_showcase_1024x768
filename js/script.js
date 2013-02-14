@@ -34,7 +34,9 @@ if ( Modernizr.touch ) {
 }
 //------------------------------------
 
-
+$('.logo_div').on (eventType_global, function(){
+	window.location.href = '';
+});
 
 
 
@@ -80,6 +82,9 @@ var app = (function(){
 		app.swipe_gallery.init();
 		app.form_navigation.init();
 		app.form.init();
+
+		// disable blanketReload if you need individual user timeout triggers
+		blanketReload();
 	}
 
 
@@ -94,6 +99,16 @@ var app = (function(){
 			}
 		}
 	}
+
+
+	function blanketReload() {
+		// add a one off listener to indicate interaction
+		// add individual calls elsewhere instead if a specific pattern is required
+		$('body').one(eventType_global, function(){
+			alterAddressForReload();
+		});
+	}
+
 
 
 	_self = {
@@ -188,6 +203,7 @@ app.main_navigation = (function(){
 	function bindEvents() {
 		navTrigger.on(eventType_global, function() {
 			var _this = $(this);
+			app.feedback.go(_this);
 			if ( ! _this.hasClass('open') ) {
 				_this.addClass('open');
 				animateItems.css('-webkit-transform', ('rotate(0deg) translate(0px, -'+adjustmentHeight+'px) scale(1) translateZ(0px)'));
@@ -202,9 +218,18 @@ app.main_navigation = (function(){
 				_this.removeClass('open');
 				animateItems.css('-webkit-transform', 'rotate(0deg) translate(0px, 0px) scale(1) translateZ(0px)');
 			}
-			
 		});
-		
+
+		$('#bottom_nav_content').on(eventType_global, 'a', function(e){
+			e.preventDefault();
+	        var _this = $(this);
+	        app.feedback.go( _this.parent() );
+	        var myLink = _this.attr('href');
+	        setTimeout(function(){
+	             window.location.href = myLink;
+	        },200);
+		});
+			
 	
 	}
 
@@ -267,6 +292,7 @@ app.top_navigation = (function(){
 	function bindEvents() {
 		navTrigger.on(eventType_global, function() {
 			var _this = $(this);
+			app.feedback.go(_this);
 			if ( ! _this.hasClass('open') ) {
 				_this.addClass('open');
 				animateItems.css('-webkit-transform', ('rotate(0deg) translate(0px, '+adjustmentHeight+'px) scale(1) translateZ(0px)'));
@@ -282,6 +308,17 @@ app.top_navigation = (function(){
 				animateItems.css('-webkit-transform', 'rotate(0deg) translate(0px, 0px) scale(1) translateZ(0px)');
 			}
 			
+		});
+
+
+		$('#top_nav_content').on(eventType_global, 'a', function(e){
+			e.preventDefault();
+	        var _this = $(this);
+	        app.feedback.go( _this.parent() );
+	        var myLink = _this.attr('href');
+	        setTimeout(function(){
+	             window.location.href = myLink;
+	        },200);
 		});
 	}
 
@@ -318,7 +355,8 @@ app.form_navigation = (function(){
 	
 	var _self = {};
 
-	var formTrigger	= $('#email'); // the field in the form to trigger focus 
+	var formTrigger	= $('#email'); // the element to trigger focus 
+	var formField = $('#email'); // the field to focus
 	var footerPanel = $('.footer_panel');
 	var exitTriggers = $('.fade, .cancel_form_indicator');
 	var formIsFocus = false;
@@ -339,13 +377,16 @@ app.form_navigation = (function(){
 
 	function assessAdjustmentHeight() {
 		// adjustmentHeight = footerPanel.height();
-		adjustmentHeight = 400; // The height of the android keyboard
+		adjustmentHeight = 200; // The height of the android keyboard
 	}
 
 
 	function bindEvents() {
-		formTrigger.on('focus', function() {
+		formTrigger.on(eventType_global, function() {
 			formIsFocus = true;
+
+			// hide the trigger panel
+			// formTrigger.hide();
 
 			//close all the navigation menus
 			if (topNav.hasClass('open')) {
@@ -362,11 +403,18 @@ app.form_navigation = (function(){
 				'z-index': '80'
 			});
 			$('.fade, .cancel_form_indicator').addClass('show');
+			setTimeout(function(){
+				formField.focus();
+			}, 900);
+			
 		});
 
 
 		exitTriggers.on(eventType_global, function() {
 			if (formIsFocus === true) {
+				// show the trigger panel
+				// formTrigger.show();
+
 				// animate the panel back to its propper position
 				footerPanel.css({
 					'-webkit-transform' : 'rotate(0deg) translate(0px, 0px) scale(1) translateZ(0px)',
@@ -429,7 +477,7 @@ app.feedback = (function(){
 		element.addClass('active');
 		setTimeout( function(){
 			element.removeClass('active');
-		}, 200 );
+		}, 400 );
 	}
 
 
@@ -501,6 +549,9 @@ app.preventLinks = (function(){
 
 
 
+
+
+
 // ----------------------------------------------------- //
 // MAIN SWIPE GALLERY
 // ----------------------------------------------------- //
@@ -518,8 +569,8 @@ app.swipe_gallery = (function(){
 		restartAfter  = 19000,
 		scrollSpeed   = 800,
 		hScrollbar    = false,
-		popupFocus    = false;
-
+		popupFocus    = false,
+		infoPanel     = $('#info_panel');
 
 
 	function init(){
@@ -570,23 +621,48 @@ app.swipe_gallery = (function(){
 			clearTimeout(restartAutoPlayTimer);
 		}).on('touchend mouseup', function(){
 			// console.log('RESTART TIMEER');
-			restartAutoPlayTimer = setTimeout(restartAutoPlay,restartAfter);
+			// restartAutoPlayTimer = setTimeout(restartAutoPlay,restartAfter);
 		});
 
 		// close popup info panel event
 		$('.info_panel .close, .fade').on(eventType_global, function(){
 			if (popupFocus === true) {
 				$('.fade').removeClass('show');
-				$('.info_panel').removeClass('show');
+				$('.info_panel').removeClass('show').addClass('hide');
 			}
 		});
 
-		gallery.on(eventType_global, '.extra.pop', function(){
+		gallery.on('click', '.extra.pop', function(){
+			var _this = $(this);
+			app.feedback.go(_this);
 			popupFocus = true;
-			$('.info_panel').addClass('show');
-			$('.fade').addClass('show');
+			var _this = $(this);
+			populatePopup(_this);
 		});
 
+	}
+
+
+	function populatePopup(extraButtonElement) {
+
+		var heading = extraButtonElement.find('.heading').html();
+		var sub_heading = extraButtonElement.find('.sub_heading').html();
+		var copy = extraButtonElement.find('.copy').html();
+		var thisImg = extraButtonElement.find('img');
+		var imageSrc = thisImg.attr('src');
+		var imageWidth = thisImg.attr('width');
+		var imageHeight = thisImg.attr('height');
+
+		// set the info panel contents (rather slow way but should be ok)
+		infoPanel.find('.heading').html(heading);
+		infoPanel.find('.sub_heading').html(sub_heading);
+		infoPanel.find('.copy').html(copy);
+        infoPanel.find('.image_content').html(('<img src="' + imageSrc + '" width="' + imageWidth + '" height="' + imageHeight + '"/>'));
+
+		setTimeout(function(){
+			infoPanel.addClass('show').removeClass('hide');
+			$('.fade').addClass('show');
+		},100);
 	}
 
 
