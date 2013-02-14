@@ -125,7 +125,7 @@
 								<div class="choose_extras_option"><%= render :set => "extras_button", :values => [ [ 'Button reveals an info panel', :option_1 ], [ 'Button links to another page', :option_2 ], [ 'No button', :option_3 ] ] %></div>
 
 								<script>
-									$('.choose_extras_option').on('change', function(){
+									$('.choose_extras_option').change(function(){
 										var myVal = $(this).val();
 										if ( myVal === 'option_1' ) {
 											alert(1);
