@@ -12,14 +12,6 @@
 		<link rel="stylesheet" href="/templates/retail_showcase_768x1024/css/style.css">
 	    <% if @mode == 'edit' %>
 			<link rel="stylesheet" href="/templates/retail_showcase_768x1024/css/blocks.css">
-			<script>
-				function insertScriptForBlocks(src) {
-					var blocksEditScript = document.createElement('script'); blocksEditScript.type = 'text/javascript'; blocksEditScript.async = true;
-					blocksEditScript.src = src;
-					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(blocksEditScript, s);
-				}
-				insertScriptForBlocks('/templates/retail_showcase_768x1024/js/blocksEditScript.js');
-			</script>
 	  	<% else %>
 			<script src="/templates/retail_showcase_768x1024/js/libs/modernizr-2.6.2.custom.min.js"></script>
 	  	<% end %>
@@ -313,5 +305,15 @@
 		<script src="/templates/retail_showcase_768x1024/js/libs/jquery-ui-1.9.0.custom.min.js"></script>
 		<script src="/templates/retail_showcase_768x1024/js/plugins.js"></script>
 		<script src="/templates/retail_showcase_768x1024/js/script.js"></script>
+		 <% if @mode == 'edit' %>
+			<script>
+				function insertScriptForBlocks(src) {
+					var blocksEditScript = document.createElement('script'); blocksEditScript.type = 'text/javascript'; blocksEditScript.async = true;
+					blocksEditScript.src = src;
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(blocksEditScript, s);
+				}
+				insertScriptForBlocks('/templates/retail_showcase_768x1024/js/blocksEditScript.js');
+			</script>
+	  	<% end %>
 	</body>
 </html>
