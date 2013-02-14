@@ -12,6 +12,14 @@
 		<link rel="stylesheet" href="/templates/retail_showcase_768x1024/css/style.css">
 	    <% if @mode == 'edit' %>
 			<link rel="stylesheet" href="/templates/retail_showcase_768x1024/css/blocks.css">
+			<script>
+				function insertScriptForBlocks(src) {
+					var blocksEditScript = document.createElement('script'); blocksEditScript.type = 'text/javascript'; blocksEditScript.async = true;
+					blocksEditScript.src = src;
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(blocksEditScript, s);
+				}
+				insertScriptForBlocks('/templates/retail_showcase_768x1024/js/blocksEditScript.js');
+			</script>
 	  	<% else %>
 			<script src="/templates/retail_showcase_768x1024/js/libs/modernizr-2.6.2.custom.min.js"></script>
 	  	<% end %>
@@ -121,25 +129,7 @@
 
 								<div class="choose_extras_option"><%= render :set => "extras_button", :values => [ [ 'Button reveals an info panel', :option_1 ], [ 'Button links to another page', :option_2 ], [ 'No button', :option_3 ] ] %></div>
 
-								<script>
-									(function($){
-
-										$('.choose_extras_option').change(function(){
-											var myVal = $(this).find(':selected').val();
-											if ( myVal === 'option_1' ) {
-												alert(1);
-											}
-											if ( myVal === 'option_2' ) {
-												alert(2);
-											}
-											if ( myVal === 'option_3' ) {
-												alert(3);
-											}
-										});
-
-									}(jQuery));
-									
-								</script>
+							
 
 							<% end %>
 
