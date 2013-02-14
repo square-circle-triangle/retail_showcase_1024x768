@@ -10,6 +10,11 @@ body.edit .blocks_notes {
 	clear: both;
 }
 
+body.edit .blocks_notes.top_margin_a
+{
+	margin-top: 70px;
+}
+
 body.edit .blocks_notes:first-child
 {
 	margin-top: 30px;
