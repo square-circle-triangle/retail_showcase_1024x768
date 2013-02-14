@@ -34,10 +34,9 @@ body.edit .blocks_notes.type_2 {
   padding-bottom: 9px;
   margin: -5px 0 0px 0;
   color: #fff;
-  background-color: #2C363C;
-  border: 2px solid #1E6081;
+  background-color: #00456F;;
+  border: 2px solid #00E0FF;
   border-radius: 5px;
-  border-bottom: none;
   font-size: 14px;
   width: 310px;
 }
@@ -152,9 +151,25 @@ body.edit div#blocks-wrapper div#inner-blocks-wrapper .image-region-wrapper div.
 
 
 
+/* overwrite page transition fade */
+.preload body.edit .page_load_transition
+{
+	-webkit-transition-property: opacity, -webkit-transform;
+	-webkit-transition-delay: 0s, 1.5s;
+	-webkit-transition-duration: 1.4s, 0s;
+
+	opacity: 0;
+	-webkit-transform: rotate(0deg) translate(0px, 0px) scale(1) translateZ(0px);
+}
 
 
-
+body.edit .gallery
+{
+	width:  768px;
+	height: 745px;
+	position: static;
+	margin-top: 70px;
+}
 
 
 
