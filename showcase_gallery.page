@@ -126,7 +126,7 @@
 
 								<script>
 									$('.choose_extras_option').change(function(){
-										var myVal = $(this).val();
+										var myVal = $(this).find(':selected').val();
 										if ( myVal === 'option_1' ) {
 											alert(1);
 										}
