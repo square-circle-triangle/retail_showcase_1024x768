@@ -92,11 +92,7 @@
 									<span class="price_point">.</span>
 									<span class="price_cents"><%= render :textual => 'offer_cents_', :default => '90', :maxlength => '2' %></span>
 								</div>
-								<% if @mode == 'edit' %>
-									<div class="blocks_notes type_2">
-										<p>Second line for offer box:</p>
-									</div>
-								<% end %>
+								
 								<span class="line_2"><%= render :textual => 'offer_second_line_', :default => '* limited stock', :maxlength => '15' %></span>
 							</div>
 
@@ -176,7 +172,7 @@
 			<!-- BOTTOM (MAIN) NAVIGATION START -->
 			<div class="bottom_nav nav_animation">
 				<div id="bottom_nav_trigger" class="show_menu ccsBgAni_half">
-					<span class="menu_title custom_foreground_color">Main Menu</span>
+					<span class="menu_title custom_foreground_color"><%= render :textual => 'main_nav_menu_title', :default => 'Main Menu', :maxlength => '30' %></span>
 				</div>
 				
 			</div>

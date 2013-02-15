@@ -149,6 +149,12 @@ body.edit div#blocks-wrapper div#inner-blocks-wrapper .image-region-wrapper div.
 ===================================================================================*/
 
 
+body.edit,
+html.preload,  /* preload is not removed by javascript in blocks unless you do so in the blocksEditScript.js */
+body.edit .container
+{
+	height: auto;
+}
 
 
 /* overwrite page transition fade */
@@ -167,11 +173,31 @@ body.edit .gallery
 {
 	width:  768px;
 	height: 745px;
-	position: static;
+	position: relative;
 	margin-top: 70px;
 }
 
+body.edit .gallery .image-region-wrapper
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 369px;
+}
 
+body.edit .gallery .image-region-wrapper > img
+{
+	width: 380px;
+	height: 368px;
+	position: absolute;
+	top: -25px;
+	right: 30px;
+}
+
+body.edit .bottom_nav
+{
+	position: static;
+}
 
 
 
