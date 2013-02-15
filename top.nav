@@ -1,0 +1,34 @@
+<% @top_level_items.each_with_index do |nav_item, i| %>
+	<div class="black_banner type_3 <%= nav_item.page_elements('product_category', :selected) %>" data-stats="<%= nav_item.page_elements('heading_1', :text) %>-<%= nav_item.page_elements('sub_heading_1', :text) %>">
+
+		<div class="middle_align">
+			<span class="product_heading"><%= nav_item.page_elements('heading_1', :text) %></span>
+			<span class="sub_heading"><%= nav_item.page_elements('sub_heading_1', :text) %></span>
+
+			<ul>
+				<% nav_item.navigable_object.regions.find_by_name('bullet_points_for_listing').repeats.each do |repeat_item| %>
+					<li class="product_detail_li"><%= repeat_item.elements('product_detail_li_').first.text %></li>
+				<% end %>
+			</ul>
+
+		</div>
+		<div class="image_div">
+			<% if nav_item.page_elements('listing_image_1').try(:asset) %>
+				<img src="<%= nav_item.page_elements('listing_image_1').asset.url(:web) %>" width="<%= nav_item.page_elements('listing_image_1').asset.width %>" height="<%= nav_item.page_elements('listing_image_1').asset.height %>">
+			<% end %>
+		</div>
+		<!-- link to product page via numerical id (i) -->
+		<div id="<%= i %>" class="nav_button_medium sprite"></div>
+	</div>
+<% end %>
+
+
+
+
+
+<ul id="top_nav_content" class="top_nav_content nav_animation">
+				<% render :region => 'top_nav_repeating_region', :max_repeats => 1, :elective => true do %>
+					<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
+				<% end %>
+			</ul>
+			<!-- TOP NAVIGATION END -->

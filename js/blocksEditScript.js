@@ -13,13 +13,16 @@
 	$('.choose_extras_option').change(function(){
 		var myVal = $(this).find(':selected').val();
 		if ( myVal === 'option_1' ) {
-			alert(1);
+			$('.info_for_popup').show();
+			$('.extra a').hide();
 		}
 		if ( myVal === 'option_2' ) {
-			alert(2);
+			$('.info_for_popup').hide();
+			$('.extra a').show();
 		}
 		if ( myVal === 'option_3' ) {
-			alert(3);
+			$('.info_for_popup').hide();
+			$('.extra a').hide();
 		}
 	});
 

@@ -80,24 +80,12 @@
 
 
 						<div class="gallery_item slide left">
-							<% if @mode == 'edit' %>
-								<div class="blocks_notes type_2">
-									<p>Main image:</p>
-								</div>
-							<% end %>
+							
 							<%= render :image => 'main_image_', :default => "/templates/retail_showcase_768x1024/img/placeholders/products_768x745.jpg", :width => "768", :height => "745" %>
 							<div class="text_panel custom_background_color nav_animation">
-								<% if @mode == 'edit' %>
-									<div class="blocks_notes type_2">
-										<p>First line for offer box:</p>
-									</div>
-								<% end %>
+								
 								<span class="line_1"><%= render :textual => 'offer_top_line_', :default => 'now only', :maxlength => '15' %></span>
-								<% if @mode == 'edit' %>
-									<div class="blocks_notes type_2">
-										<p>Dollars and cents for offer box:</p>
-									</div>
-								<% end %>
+								
 								<div class="price_div">
 									<span class="price_sign">$</span>
 									<span class="price_dollars"><%= render :textual => 'offer_dollars_', :default => '105', :maxlength => '3' %></span>
@@ -115,7 +103,7 @@
 
 							<% if @mode == 'edit' %>
 								<div class="blocks_notes type_2">
-									<p>Main image:</p>
+									<p>Optional extras button/badge:</p>
 								</div>
 							
 
@@ -158,26 +146,6 @@
 			</div> <!-- end gallery -->
 			
 			
-<!-- 
-<div class="gallery_item slide left">
-						<img src="img/placeholders/products_768x745.jpg" width="768" height="745"/>
-						<div class="text_panel custom_background_color nav_animation">
-							<span class="line_1">new offer 2</span>
-							<div class="price_div">
-								<span class="price_sign">$</span>
-								<span class="price_dollars">790</span>
-								<span class="price_point">.</span>
-								<span class="price_cents">90</span>
-							</div>
-							<span class="line_2">*for two</span>
-						</div>
-						
-						<div class="extra">
-							<a href="#">
-								<img src="img/placeholders/extra_240x240.png" width="240" height="240"/>
-							</a>
-						</div>
-					</div> 
 
 
 
@@ -186,35 +154,24 @@
 
 
 
-
-
-
-
-
-
+			
 
 
 
 			<!-- TOP NAVIGATION START -->
 			<div class="top_nav nav_animation">
-				<div id="top_nav_trigger" class="show_menu ccsBgAni_half">
-					<span class="menu_title custom_foreground_color">Menu</span>
-				</div>
+				<!-- <div id="top_nav_trigger" class="show_menu ccsBgAni_half">
+					<span class="menu_title custom_foreground_color"><%#= render :textual => 'top_nav_menu_title', :default => 'Menu', :maxlength => '30' %></span>
+				</div> -->
 				<div class="current_page_div">
-					<span class="current_page">Title of this page</span>
+					<span class="current_page"><%= @page.name %></span>
 				</div>
 			</div>
-			<ul id="top_nav_content" class="top_nav_content nav_animation">
-				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
-				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
-				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
-				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
-				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
-			</ul>
+			<!-- <%#= render :navigation => "Top Menu" , :template_name => 'top.nav' %> -->
 			<!-- TOP NAVIGATION END -->
 
 
-
+			
 
 			<!-- BOTTOM (MAIN) NAVIGATION START -->
 			<div class="bottom_nav nav_animation">
@@ -223,13 +180,7 @@
 				</div>
 				
 			</div>
-			<ul id="bottom_nav_content" class="bottom_nav_content nav_animation">
-				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
-				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
-				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
-				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
-				<li class="menu_item custom_foreground_color"><a href="http://www.apple.com">Link to another page</a></li>
-			</ul>
+			<%= render :navigation => "Main Menu" , :template_name => 'main.nav' %>
 			<!-- BOTTOM (MAIN) NAVIGATION END -->
 
 
