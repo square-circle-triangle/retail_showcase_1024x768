@@ -13,14 +13,12 @@
 	$('.choose_extras_option').change(function(){
 		var myVal = $(this).find(':selected').val();
 		if ( myVal === 'option_1' ) {
-			$('.extra').show();
-			$('.info_for_popup').show();
-			$('.extra a').hide();
+			$('.extra.pop').show();
+			$('.extra.link').hide();
 		}
 		if ( myVal === 'option_2' ) {
-			$('.extra').show();
-			$('.info_for_popup').hide();
-			$('.extra a').show();
+			$('.extra.pop').hide();
+			$('.extra.link').show();
 		}
 		if ( myVal === 'option_3' ) {
 			$('.extra').hide();

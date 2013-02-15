@@ -173,6 +173,7 @@ body.edit .container
 }
 
 
+
 body.edit .gallery
 {
 	width:  768px;
@@ -199,7 +200,7 @@ body.edit .gallery .image-region-wrapper
 	width: 369px;
 }
 
-body.edit .gallery .image-region-wrapper > img
+body.edit .gallery .gallery_item > .image-region-wrapper > img
 {
 	width: 380px;
 	height: 368px;
@@ -361,7 +362,10 @@ body.edit .extra > img
 }
 
 
-
+body.edit .info_for_popup
+{
+	display: block;
+}
 
 
 
