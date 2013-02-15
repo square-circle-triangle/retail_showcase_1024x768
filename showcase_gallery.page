@@ -96,30 +96,50 @@
 								<div class="blocks_notes type_2 extras_note">
 									<p>Optional extras button/badge:</p>
 								</div>
-						
+								<!-- optional graphic button for extra action -->
 								<div class="choose_extras_option"><%= render :set => "extras_button", :values => [ [ 'Button reveals an info panel', :option_1 ], [ 'Button links to another page', :option_2 ], [ 'No button', :option_3 ] ] %></div>
 
 							<% end %>
 
-							<!-- optional graphic button for extra action -->
+							
 
 							
-							<div class="extra pop"><!-- option 1 -->
-								<div class="info_for_popup">
-									<span class="heading"><%= render :textual => 'poupup_heading', :default => 'Popup panel heading', :maxlength => '25' %></span>
-									<span class="sub_heading"><%= render :textual => 'poupup_sub_heading', :default => 'Product heading', :maxlength => '50' %></span>
-									<div class="copy"><%= render :textual => 'tiny_mce_text_unique_name', :type => :multi, :default => "<p>Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum.</p>" %></div>
-									<%= render :image => 'popup_image', :default => "/templates/retail_showcase_768x1024/img/placeholders/products_250x330.jpg", :width => "250", :height => 200..380 %>
-								</div> <!-- end info_for_popup -->
-								<%= render :image => 'extra_button_image', :default => "/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png", :width => "240", :height => "240" %>
-							</div> <!-- end extra pop -->
+							<% if parent.elements.find_by_name('extras_button').selected == :option_1 || @mode == 'edit' %>
+								
+								<div class="extra pop"><!-- option 1 -->
+									<div class="info_for_popup">
+										<span class="heading"><%= render :textual => 'poupup_heading', :default => 'Popup panel heading', :maxlength => '25' %></span>
+										<span class="sub_heading"><%= render :textual => 'poupup_sub_heading', :default => 'Product heading', :maxlength => '50' %></span>
+										<div class="copy"><%= render :textual => 'tiny_mce_text_unique_name', :type => :multi, :default => "<p>Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum.</p>" %></div>
+										<%= render :image => 'popup_image', :default => "/templates/retail_showcase_768x1024/img/placeholders/products_250x330.jpg", :width => "250", :height => 200..380 %>
+									</div> <!-- end info_for_popup -->
+									<%= render :image => 'extra_button_image', :default => "/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png", :width => "240", :height => "240" %>
+								</div> <!-- end extra pop -->
+
+							<% end %>
+
+
+
+
+							<% if parent.elements.find_by_name('extras_button').selected == :option_2 || @mode == 'edit' %>
+
+								<div class="extra link"><!-- option 2  -->
+									<% render :link => "extra_link", :text_editable => false, :link_value => '#', :link_attributes => { :class => "extra_link" } do %>
+										<%= render :image => 'extra_button_image_with_link', :default => "/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png", :width => "240", :height => "240" %>
+									<% end %>
+								</div>
+
+							<% end %>
+
+
+
+
+
 
 							
-							<div class="extra link"><!-- option 2  -->
-								<% render :link => "extra_link", :text_editable => false, :link_value => '#', :link_attributes => { :class => "extra_link" } do %>
-									<%= render :image => 'extra_button_image_with_link', :default => "/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png", :width => "240", :height => "240" %>
-								<% end %>
-							</div>
+
+							
+							
 
 
 						</div> <!-- end gallery item -->

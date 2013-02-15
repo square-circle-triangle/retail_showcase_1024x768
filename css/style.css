@@ -1003,19 +1003,19 @@ a.no_linking
 	-webkit-transition-property: -webkit-transform;
 }
 
-.gallery .extra img
+.gallery .extra > img
 {
 	-webkit-transition-duration: 0.2s;
 	-webkit-transform: rotate(-1deg) translate(-3px, -3px) scale(0.97) translateZ(0px);
 }
 
-.gallery .extra:hover img
+.gallery .extra.active > img
 {
 	-webkit-transition-duration: 0.5s;
 	-webkit-transform: rotate(0deg) translate(0px, 0px) scale(1) translateZ(0px);
 }
 
-.gallery .extra.no_actions:hover img
+.gallery .extra.no_actions.active > img
 {
 	-webkit-transition-duration: 0s;
 	-webkit-transform: rotate(-1deg) translate(-3px, -3px) scale(0.97) translateZ(0px);

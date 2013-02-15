@@ -91,10 +91,10 @@ var app = (function(){
 	function alterAddressForReload() {
 		if ( reloadTimeoutRequired === false ) {
 			var myHref = window.location.href;
-			if ( myHref.indexOf(('#' + eventType)) > -1 ) {
+			if ( myHref.indexOf(('#' + eventType_global)) > -1 ) {
 				reloadTimeoutRequired = true;
 			} else {
-				window.location = ( window.location.href + '#' + eventType );
+				window.location = ( window.location.href + '#' + eventType_global );
 				reloadTimeoutRequired = true;
 			}
 		}

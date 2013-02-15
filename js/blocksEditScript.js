@@ -10,18 +10,19 @@
 
 
 
-	$('.choose_extras_option').change(function(){
-		var myVal = $(this).find(':selected').val();
+	$('body').delegate('.choose_extras_option', 'change', function(){
+		var _this = $(this);
+		var myVal = _this.find(':selected').val();
 		if ( myVal === 'option_1' ) {
-			$('.extra.pop').show();
-			$('.extra.link').hide();
+			_this.parent().find('.extra.pop').show();
+			_this.parent().find('.extra.link').hide();
 		}
 		if ( myVal === 'option_2' ) {
-			$('.extra.pop').hide();
-			$('.extra.link').show();
+			_this.parent().find('.extra.pop').hide();
+			_this.parent().find('.extra.link').show();
 		}
 		if ( myVal === 'option_3' ) {
-			$('.extra').hide();
+			_this.parent().find('.extra').hide();
 		}
 	});
 

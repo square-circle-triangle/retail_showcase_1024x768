@@ -351,21 +351,116 @@ body.edit .extra
 }
 
 
-body.edit .extra a > img,
-body.edit .extra > img
+body.edit .extra > .link-region-wrapper > .image-region-wrapper > img,
+body.edit .extra > .image-region-wrapper > img
 {
 	width: 150px;
 	height: 150px;
 	position: absolute;
-	top: 0px;
-	right: 0px;
+	top: 40px;
+	right: 29px;
+}
+
+
+
+
+body.edit .extra.link .editable_link
+{
+	margin-left: 465px;
+	margin-top: 2px;
+}
+
+body.edit .extra.pop .copy
+{
+	width: 200px;
+	height: 200px;
+	margin-left: 3px;
+	margin-top: 3px;
+}
+
+body.edit .extra.pop .copy .text-region-wrapper
+{
+	height: 170px !important;
+}
+
+body.edit .extra.pop table.mceLayout .mceLast iframe
+{
+	height: 92px !important;
+}
+
+body.edit .extra.pop table.mceLayout tr.mceLast
+{
+	height: 92px !important;
+	display: block;
+}
+
+body.edit .extra.pop table.mceLayout > tbody
+{
+	display: table-header-group;
+}
+
+
+body.edit .extra.link
+{
+	display: none;
+}
+
+body.edit .extra > .image-region-wrapper,
+body.edit .extra.link .link-region-wrapper > .image-region-wrapper
+
+{
+	width: 230px;
+}
+
+
+body.edit .extra.pop .info_for_popup > .image-region-wrapper
+{
+	position: absolute;
+	left: 250px;
+	top: 19px;
+	width: 230px;
+}
+
+
+
+body.edit .extra.pop .info_for_popup > .image-region-wrapper > img
+{
+	width: auto;
+	height: 188px;
+	border: 1px solid black;
 }
 
 
 body.edit .info_for_popup
 {
 	display: block;
+	width: 468px;
+	height: 228px;
+	border: 1px solid gray;
+	margin: 10px 0px 0px 10px;
 }
+
+
+body.edit .extra.pop .info_for_popup input.editable_region
+{
+	width: 178px;
+	margin-left: 3px;
+	margin-top: 3px;
+}
+
+body.edit .info_for_popup .text-region-wrapper input[disabled="disabled"]
+{
+	font-size: 12px;
+	border: none;
+	background-color: transparent;
+	top: -3px;
+	position: relative;
+	left: 4px;
+	width: 20px;
+}
+
+
+
 
 
 
