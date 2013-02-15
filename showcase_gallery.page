@@ -97,14 +97,14 @@
 									<p>Optional extras button/badge:</p>
 								</div>
 								<!-- optional graphic button for extra action -->
-								<div class="choose_extras_option"><%= render :set => "extras_button", :values => [ [ 'Button reveals an info panel', :option_1 ], [ 'Button links to another page', :option_2 ], [ 'No button', :option_3 ] ] %></div>
+								<div class="choose_extras_option"><%= render :set => "extras_button", :values => [ [ 'Button reveals an info panel', "option_1" ], [ 'Button links to another page', "option_2" ], [ 'No button', "option_3" ] ] %></div>
 
 							<% end %>
 
 							
 
 							
-							<% if parent.elements.find_by_name('extras_button').selected == :option_1 || @mode == 'edit' %>
+							<% if parent.elements.find_by_name('extras_button').selected == "option_1" || @mode == 'edit' %>
 								
 								<div class="extra pop"><!-- option 1 -->
 									<div class="info_for_popup">
