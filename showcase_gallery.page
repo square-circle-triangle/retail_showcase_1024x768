@@ -112,19 +112,21 @@
 								<!-- either: -->
 								<!-- option 1 -->
 								<div class="info_for_popup">
-									<span class="heading">Sydney harbour bridge</span>
-									<span class="sub_heading">Now for sale</span>
-									<div class="copy"><p>I will sell it to you, but you will have to claim it back from all the squatters.</p></div>
+									<span class="heading"><%= render :textual => 'poupup_heading', :default => 'Popup panel heading', :maxlength => '25' %></span>
+									<span class="sub_heading"><%= render :textual => 'poupup_sub_heading', :default => 'Product heading', :maxlength => '50' %></span>
+									<div class="copy"><%= render :textual => 'tiny_mce_text_unique_name', :type => :multi, :default => "<p>Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum.</p>" %></div>
 									<img src="/templates/retail_showcase_768x1024/img/placeholders/x1c.jpg" width="250" height="380"/>
+									<%= render :image => 'popup_image', :default => "/templates/retail_showcase_768x1024/img/placeholders/products_250x330.jpg", :width => "250", :height => 200..380 %>
 								</div> <!-- end info_for_popup -->
 
 								<!-- option 2 -->
 								<a href="#">
 									<img src="/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png" width="240" height="240"/>
+									<%= render :image => 'extra_button_image_with_link', :default => "/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png", :width => "240", :height => "240" %>
 								</a>
 
 
-								<img src="/templates/retail_showcase_768x1024/img/placeholders/x1b.jpg" width="240" height="240"/>
+								<%= render :image => 'extra_button_image', :default => "/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png", :width => "240", :height => "240" %>
 							</div>
 						</div> <!-- end gallery item -->
 
@@ -181,16 +183,19 @@
 
 
 
+
+
+
 			<div class="footer_panel">
 				<div class="footer_section">
-					<span class="title custom_foreground_color">advertisement</span>
+					<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_1', :default => 'advertisement', :maxlength => '30' %></span>
 					<div class="advert_image_div">
-						<img src="img/placeholders/advertise_217x136.jpg" width="217" height="136"/>
+						<%= render :image => 'footer_panel_image_1', :default => "/templates/retail_showcase_768x1024/img/placeholders/advertise_217x136.jpg", :width => "217", :height => "136" %>
 					</div>
 				</div>
 
 				<div class="footer_section">
-					<span class="title custom_foreground_color">loyalty rewards signup</span>
+					<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_2', :default => 'loyalty rewards signup', :maxlength => '30' %></span>
 					<div class="small_form_div">
 							<span class="cancel_form_indicator">close | x</span>
 
@@ -211,7 +216,7 @@
 
 						    <div class="clearfix"></div>
 							
-							<span class="form_text">20% off all products for members.</span>
+							<span class="form_text"><%= render :textual => 'footer_form_text', :default => '20% off all products for members.', :maxlength => '30' %></span>
 
 						</form>
 						<!-- This will be appended by js on success -->
@@ -222,15 +227,15 @@
 				</div>
 
 				<div class="footer_section">
-					<span class="title custom_foreground_color">advertisement</span>
+					<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_3', :default => 'advertisement', :maxlength => '30' %></span>
 					<div class="advert_image_div">
-						<img src="img/placeholders/advertise_217x136.jpg" width="217" height="136"/>
+						<%= render :image => 'footer_panel_image_3', :default => "/templates/retail_showcase_768x1024/img/placeholders/advertise_217x136.jpg", :width => "217", :height => "136" %>
 					</div>
 				</div>
 
 
 				<div class="logo_div">
-					<img src="img/placeholders/logo_217x60.png" width="217" height="60"/>
+					<%= render :image => 'footer_panel_image_1', :default => "/templates/retail_showcase_768x1024/img/placeholders/logo_217x60.png", :width => "217", :height => "60" %>
 				</div>
 			</div>
 

@@ -335,7 +335,7 @@ body.edit .extra
 {
 	width: 718px;
 	height: 250px;
-	border: 1px solid red;
+	border: 1px dotted gray;
 	left: 10px;
 	top: 360px;
 }
