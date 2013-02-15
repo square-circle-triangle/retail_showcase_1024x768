@@ -177,6 +177,11 @@ body.edit .gallery
 	margin-top: 70px;
 }
 
+body.edit .gallery .gallery_item
+{
+	height: 615px;
+}
+
 body.edit .gallery .image-region-wrapper
 {
 	position: absolute;
@@ -286,7 +291,8 @@ body.edit .gallery .price_div .price_cents
 }
 
 
-body.edit .footer_panel
+body.edit .footer_panel,
+body.edit .logo_div
 {
 	position: static;
 }
@@ -299,22 +305,51 @@ body.edit #bottom_nav_content
 }
 
 
+.extras_note
+{
+	position: absolute;
+	top: 270px;
+	left: 0px;
+}
+
+.choose_extras_option
+{
+	position: absolute;
+	top: 310px;
+	left: 0px;
+	font-size: 20px;
+}
+
+body.edit #bottom_nav_trigger
+{
+	position: relative;
+	width: 445px;
+}
+
+body.edit #bottom_nav_trigger .text-region-wrapper input[disabled="disabled"]
+{
+	color: gray;
+}
+
+body.edit .extra
+{
+	width: 718px;
+	height: 250px;
+	border: 1px solid red;
+	left: 10px;
+	top: 360px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+body.edit .extra a > img,
+body.edit .extra > img
+{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
 
 
 

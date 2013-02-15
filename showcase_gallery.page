@@ -115,16 +115,16 @@
 									<span class="heading">Sydney harbour bridge</span>
 									<span class="sub_heading">Now for sale</span>
 									<div class="copy"><p>I will sell it to you, but you will have to claim it back from all the squatters.</p></div>
-									<img src="img/placeholders/x1c.jpg" width="250" height="380"/>
+									<img src="/templates/retail_showcase_768x1024/img/placeholders/x1c.jpg" width="250" height="380"/>
 								</div> <!-- end info_for_popup -->
 
 								<!-- option 2 -->
 								<a href="#">
-									<img src="img/placeholders/extra_240x240.png" width="240" height="240"/>
+									<img src="/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png" width="240" height="240"/>
 								</a>
 
 
-								<img src="img/placeholders/x1b.jpg" width="240" height="240"/>
+								<img src="/templates/retail_showcase_768x1024/img/placeholders/x1b.jpg" width="240" height="240"/>
 							</div>
 						</div> <!-- end gallery item -->
 
