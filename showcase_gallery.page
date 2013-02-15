@@ -98,14 +98,11 @@
 
 
 							<% if @mode == 'edit' %>
-								<div class="blocks_notes type_2">
+								<div class="blocks_notes type_2 extras_note">
 									<p>Optional extras button/badge:</p>
 								</div>
-							
-
+						
 								<div class="choose_extras_option"><%= render :set => "extras_button", :values => [ [ 'Button reveals an info panel', :option_1 ], [ 'Button links to another page', :option_2 ], [ 'No button', :option_3 ] ] %></div>
-
-							
 
 							<% end %>
 

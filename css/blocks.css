@@ -199,9 +199,104 @@ body.edit .bottom_nav
 	position: static;
 }
 
+body.edit .gallery .text_panel .line_1,
+body.edit .gallery .text_panel .line_2
+{
+	font-size: 23px;
+	margin-top: 20px;
+}
+
+body.edit .gallery .text_panel .line_2
+{
+	margin-top: 94px;
+}
+
+body.edit .text-region-wrapper input[disabled="disabled"]
+{
+	font-size: 14px;
+	border: none;
+	background-color: transparent;
+	top: -14px;
+	position: relative;
+	left: 4px;
+	width: 20px;
+}
+
+body.edit .gallery .text_panel
+{
+	height: 201px;
+}
+
+body.edit .gallery .text_panel .price_div
+{
+	display: block;
+	position: absolute;
+	top: 63px;
+	width: 273px;
+	height: 58px;
+	overflow: hidden;
+}
+
+body.edit .gallery .price_div .price_dollars,
+body.edit .gallery .price_div .price_cents
+{
+	font-size: 25px;
+}
+
+body.edit .gallery .price_div .price_dollars .text-region-wrapper
+{
+	float: left;
+}
+
+body.edit .gallery .price_div .price_dollars .text-region-wrapper input.editable_region,
+body.edit .gallery .price_div .price_cents .text-region-wrapper input.editable_region
+{
+	width: 48px;
+}
+
+body.edit .gallery .price_div .price_dollars
+{
+	width: 80px;
+	position: absolute;
+	top: 5px;
+	left: 47px;
+}
 
 
+body.edit .gallery .price_div .price_sign
+{
+	position: absolute;
+	top: 5px;
+	left: 20px;
+}
 
+body.edit .gallery .price_div .price_point
+{
+	position: absolute;
+	top: 5px;
+	left: 125px;
+}
+
+body.edit .gallery .price_div .price_cents
+{
+	width: 80px;
+	position: absolute;
+	top: 5px;
+	left: 147px;
+}
+
+
+body.edit .footer_panel
+{
+	position: static;
+}
+
+
+body.edit #top_nav_content,
+body.edit #bottom_nav_content
+{
+	display: none;
+}
 
 
 
