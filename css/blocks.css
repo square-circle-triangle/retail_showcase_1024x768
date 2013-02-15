@@ -155,6 +155,10 @@ body.edit .container
 {
 	height: auto;
 }
+body.edit .container
+{
+	position: relative;
+}
 
 
 /* overwrite page transition fade */
@@ -172,9 +176,14 @@ body.edit .container
 body.edit .gallery
 {
 	width:  768px;
-	height: 745px;
+	height: auto;
 	position: relative;
 	margin-top: 70px;
+}
+
+body.edit .gallery .slide_wrap
+{
+	height: auto;
 }
 
 body.edit .gallery .gallery_item

@@ -102,10 +102,9 @@
 							<% end %>
 
 							<!-- optional graphic button for extra action -->
-							<div class="extra pop">
-								
-								<!-- either: -->
-								<!-- option 1 -->
+
+							
+							<div class="extra pop"><!-- option 1 -->
 								<div class="info_for_popup">
 									<span class="heading"><%= render :textual => 'poupup_heading', :default => 'Popup panel heading', :maxlength => '25' %></span>
 									<span class="sub_heading"><%= render :textual => 'poupup_sub_heading', :default => 'Product heading', :maxlength => '50' %></span>
@@ -113,16 +112,18 @@
 									<img src="/templates/retail_showcase_768x1024/img/placeholders/x1c.jpg" width="250" height="380"/>
 									<%= render :image => 'popup_image', :default => "/templates/retail_showcase_768x1024/img/placeholders/products_250x330.jpg", :width => "250", :height => 200..380 %>
 								</div> <!-- end info_for_popup -->
+								<%= render :image => 'extra_button_image', :default => "/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png", :width => "240", :height => "240" %>
+							</div> <!-- end extra pop -->
 
-								<!-- option 2 -->
+							
+							<div class="extra link"><!-- option 2  -->
 								<a href="#">
 									<img src="/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png" width="240" height="240"/>
 									<%= render :image => 'extra_button_image_with_link', :default => "/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png", :width => "240", :height => "240" %>
 								</a>
-
-
-								<%= render :image => 'extra_button_image', :default => "/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png", :width => "240", :height => "240" %>
 							</div>
+
+
 						</div> <!-- end gallery item -->
 
 
