@@ -9,8 +9,25 @@
 
 
 
-
+	// add hide show functionality to popup
 	$('body').delegate('.choose_extras_option', 'change', function(){
+		var _this = $(this);
+		var myVal = _this.find(':selected').val();
+		if ( myVal === 'option_1' ) {
+			_this.parent().find('.extra.pop').show();
+			_this.parent().find('.extra.link').hide();
+		}
+		if ( myVal === 'option_2' ) {
+			_this.parent().find('.extra.pop').hide();
+			_this.parent().find('.extra.link').show();
+		}
+		if ( myVal === 'option_3' ) {
+			_this.parent().find('.extra').hide();
+		}
+	});
+
+	//setup initial views
+	$('.choose_extras_option').each(function(i){
 		var _this = $(this);
 		var myVal = _this.find(':selected').val();
 		if ( myVal === 'option_1' ) {
