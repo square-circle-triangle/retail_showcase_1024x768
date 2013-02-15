@@ -167,7 +167,7 @@
 					<span class="current_page"><%= @page.name %></span>
 				</div>
 			</div>
-			<!-- <%#= render :navigation => "Top Menu" , :template_name => 'top.nav' %> -->
+			<!-- <%#= render :navigation => "Top.menu" , :template_name => 'top.nav' %> -->
 			<!-- TOP NAVIGATION END -->
 
 
@@ -180,7 +180,7 @@
 				</div>
 				
 			</div>
-			<%= render :navigation => "Main Menu" , :template_name => 'main.nav' %>
+			<%= render :navigation => "Main.menu" , :template_name => 'main.nav' %>
 			<!-- BOTTOM (MAIN) NAVIGATION END -->
 
 
