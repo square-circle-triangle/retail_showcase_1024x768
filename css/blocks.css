@@ -301,11 +301,13 @@ body.edit .gallery .price_div .price_cents
 }
 
 
-body.edit .footer_panel,
-body.edit .logo_div
+body.edit .footer_panel
 {
-	position: static;
+	position: relative;
+	top: 0px;
+	height: 309px;
 }
+
 
 
 body.edit #top_nav_content,
@@ -460,10 +462,54 @@ body.edit .info_for_popup .text-region-wrapper input[disabled="disabled"]
 }
 
 
+body.edit .footer_section .title input.editable_region
+{
+	width: 190px;
+}
+
+body.edit .footer_section .title input[disabled="disabled"]
+{
+	top: -6px;
+}
+
+body.edit div#blocks-wrapper div#inner-blocks-wrapper .footer_section .image-region-wrapper div.blocks-element
+{
+	display: none;
+}
+
+body.edit .advert_image_div
+{
+	height: 172px;
+}
 
 
+body.edit .logo_div
+{
+	position: absolute;
+	top: 225px;
+}
 
+body.edit .logo_div .image-region-wrapper
+{
+	width: 330px;
+	padding-top: 17px;
+}
 
+body.edit #email,
+body.edit #submit_email
+{
+	display: none;
+}
+
+body.edit .small_standard_form .form_text
+{
+	margin: 27px 0px 10px 10px;
+}
+
+body.edit .small_standard_form .form_text .editable_region
+{
+	width: 177px;
+}
 
 
 

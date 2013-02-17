@@ -47,16 +47,16 @@
 
 
 		<!-- info panel for optional info ('extra') buttons within gallery -->
-		<div id="info_panel" class="info_panel">
+		<div id="info_panel" class="info_panel noselect">
 			<div class="panel_banner">
-				<span class="heading custom_foreground_color"><!-- Panel heading --></span>
-				<div class="close"></div>
+				<span class="heading custom_foreground_color noselect"><!-- Panel heading --></span>
+				<div class="close noselect"></div>
 			</div> <!-- end panel banner -->
 			<div class="textual_content">
-				<span class="sub_heading custom_foreground_color"><!-- item description &amp; features --></span>
-				<div class="copy no_linking"><!-- <p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p> --></div>
+				<span class="sub_heading custom_foreground_color noselect"><!-- item description &amp; features --></span>
+				<div class="copy no_linking noselect"><!-- <p>cras vel sapien suscipit enim porta consectetur a et leo. in feugiat sollicitudin eros, faucibus scelerisque sapien molestie eu. aenean vitae nisl elit, sit amet mattis.</p> --></div>
 			</div> <!-- end textual content -->
-			<div class="image_content">
+			<div class="image_content noselect">
 				<!-- <img src="img/placeholders/products_250x330.jpg" width="250" height="330"/> -->
 			</div> <!-- end image content -->
 		</div> <!-- end info panel -->
