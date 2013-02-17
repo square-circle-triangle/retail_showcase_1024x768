@@ -489,6 +489,12 @@ a.no_linking
 	-webkit-transition-duration: 0.8s;
 }
 
+.nav_animation_b
+{
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 0.2s;
+}
+
 
 @-webkit-keyframes "info_panel_in" {
  0% {
