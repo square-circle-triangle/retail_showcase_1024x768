@@ -355,7 +355,6 @@ a.no_linking
 .bottom_nav
 {
 	top:  690px;
-	height: 50px;
 	z-index: 10;
 }
 
@@ -365,7 +364,7 @@ a.no_linking
 	height: 5px;
 	position: absolute;
 	left: 0px;
-	top:  0px;
+	top:  745px;
 	background-color: rgba(0,0,0,0.7);
 	z-index: 10;
 }

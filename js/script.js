@@ -179,6 +179,7 @@ app.main_navigation = (function(){
 
 	// reference the top nav bar and all gallery text boxes for animation during menu reveal
 	var animateItems = $('#bottom_nav_content, .bottom_nav');
+	var baseBar = $('.bottom_nav_base_bar');
 	var adjustmentHeight;
 	var closeNavDelay = 15000;
 	var closeNavTimeout;
@@ -207,6 +208,7 @@ app.main_navigation = (function(){
 			if ( ! _this.hasClass('open') ) {
 				_this.addClass('open');
 				animateItems.css('-webkit-transform', ('rotate(0deg) translate(0px, -'+adjustmentHeight+'px) scale(1) translateZ(0px)'));
+				baseBar.css('-webkit-transform', ('rotate(0deg) translate(0px, -5px) scale(1) translateZ(0px)'));
 				if (topNav.hasClass('open')) {
 					topNav.trigger(eventType_global);
 				}
@@ -217,6 +219,7 @@ app.main_navigation = (function(){
 				clearTimeout(closeNavTimeout);
 				_this.removeClass('open');
 				animateItems.css('-webkit-transform', 'rotate(0deg) translate(0px, 0px) scale(1) translateZ(0px)');
+				baseBar.css('-webkit-transform', ('rotate(0deg) translate(0px, 0px) scale(1) translateZ(0px)'));
 			}
 		});
 

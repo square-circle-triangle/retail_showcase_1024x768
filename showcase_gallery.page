@@ -46,8 +46,8 @@
 		<div class="fade"></div>
 
 		<!-- bar to seperate main nav from footer panel -->
-		<div class="bottom_nav_base_bar"></div>
-		
+		<div class="bottom_nav_base_bar nav_animation"></div>
+
 
 		<!-- info panel for optional info ('extra') buttons within gallery -->
 		<div id="info_panel" class="info_panel noselect">
