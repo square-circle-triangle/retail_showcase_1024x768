@@ -227,6 +227,7 @@ app.main_navigation = (function(){
 	        var _this = $(this);
 	        app.feedback.go( _this.parent() );
 	        $('html').addClass('preunload');
+	          alert('hi');
 	        var myLink = _this.attr('href');
 	        setTimeout(function(){
 	             window.location.href = myLink;
