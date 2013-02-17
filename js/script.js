@@ -13,6 +13,7 @@ $(window).load(function() {
   	// ----------------------------------------
 
 
+	
   	
 
 });
@@ -37,8 +38,6 @@ if ( Modernizr.touch ) {
 $('.logo_div').on (eventType_global, function(){
 	window.location.href = '';
 });
-
-
 
 
 
@@ -194,9 +193,9 @@ app.main_navigation = (function(){
 
 
 	function assessAdjustmentHeight() {
-		adjustmentHeight = '118';
+		adjustmentHeight = '123';
 		if (  $('#bottom_nav_content .menu_item').length > 3  ) {
-			adjustmentHeight = '212';
+			adjustmentHeight = '217';
 		}
 	}
 
@@ -227,11 +226,13 @@ app.main_navigation = (function(){
 			e.preventDefault();
 	        var _this = $(this);
 	        app.feedback.go( _this.parent() );
+	        $('html').addClass('preunload');
 	        var myLink = _this.attr('href');
 	        setTimeout(function(){
 	             window.location.href = myLink;
-	        },200);
+	        },1500);
 		});
+
 			
 	
 	}
@@ -526,6 +527,7 @@ app.preventLinks = (function(){
 			event.preventDefault();
 			return;
 		});
+
 	}
 
 

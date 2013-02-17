@@ -286,6 +286,16 @@ a.no_linking
 	opacity: 1;
 	-webkit-transform: rotate(0deg) translate(768px, 0px) scale(1) translateZ(0px);
 }
+
+.preunload .page_load_transition
+{
+	-webkit-transition-property: opacity, -webkit-transform;
+	-webkit-transition-delay: 0.1s, 0s;
+	-webkit-transition-duration: 1.4s, 0s;
+
+	opacity: 1;
+	-webkit-transform: rotate(0deg) translate(768px, 0px) scale(1) translateZ(0px);
+}
 /*===================================================================================
             END PAGE LOAD TRANSITIONS <<<<<
 ===================================================================================*/
@@ -461,6 +471,11 @@ a.no_linking
 	-webkit-transition-duration: 0.3s;
 }
 
+.bottom_nav_content .menu_item
+{
+	margin: 23px 0px 5px 23px;
+}
+
 .top_nav_content .menu_item a,
 .bottom_nav_content .menu_item a
 {
@@ -492,7 +507,8 @@ a.no_linking
 .nav_animation_b
 {
 	-webkit-transition-property: -webkit-transform;
-	-webkit-transition-duration: 0.2s;
+	-webkit-transition-duration: 0s;
+	-webkit-transition-delay: 0.1s;
 }
 
 
