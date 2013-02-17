@@ -251,7 +251,7 @@
 
 
 				<div class="logo_div">
-					<%= render :image => 'footer_panel_image_1', :default => "/templates/retail_showcase_768x1024/img/placeholders/logo_217x60.png", :width => "217", :height => "60" %>
+					<%= render :image => 'footer_panel_logo', :default => "/templates/retail_showcase_768x1024/img/placeholders/logo_217x60.png", :width => "217", :height => "60" %>
 				</div>
 			</div>
 
