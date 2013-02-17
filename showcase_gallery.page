@@ -104,7 +104,8 @@
 							
 
 							
-							<% if parent.elements.find_by_name('extras_button').selected == "option_1" || @mode == 'edit' %>
+							<!-- <%# if parent.elements.find_by_name('extras_button').selected == "option_1" || @mode == 'edit' %> -->
+							<% if parent.elements.detect{ |e| e.name == 'extras_button' }.try(:selected) == "option_1" || @mode == 'edit' %>
 								
 								<div class="extra pop"><!-- option 1 -->
 									<div class="info_for_popup">
@@ -121,7 +122,8 @@
 
 
 
-							<% if parent.elements.find_by_name('extras_button').selected == "option_2" || @mode == 'edit' %>
+							<!-- <%# if parent.elements.find_by_name('extras_button').selected == "option_2" || @mode == 'edit' %> -->
+							<% if parent.elements.detect{ |e| e.name == 'extras_button' }.try(:selected) == "option_2" || @mode == 'edit' %>
 
 								<div class="extra link"><!-- option 2  -->
 									<% render :link => "extra_link", :text_editable => false, :link_value => '#', :link_attributes => { :class => "extra_link" } do %>
