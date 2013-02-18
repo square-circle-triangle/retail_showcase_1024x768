@@ -5,6 +5,7 @@
 
 <% if @mode == 'edit' %>
 	<!-- include a template group stylesheet to render widget nicely -->
+	<link rel="stylesheet" href="/templates/retail_showcase_768x1024/css/style.css">
 	<link rel="stylesheet" href="/templates/retail_showcase_768x1024/css/blocks.css">
 <% end %>
 
