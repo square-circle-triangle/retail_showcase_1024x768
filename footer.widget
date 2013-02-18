@@ -1,0 +1,52 @@
+<div class="footer_panel">
+	<div class="footer_section">
+		<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_1', :default => 'advertisement', :maxlength => '30' %></span>
+		<div class="advert_image_div">
+			<%= render :image => 'footer_panel_image_1', :default => "/templates/retail_showcase_768x1024/img/placeholders/advertise_217x136.jpg", :width => "217", :height => "136" %>
+		</div>
+	</div>
+
+	<div class="footer_section">
+		<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_2', :default => 'loyalty rewards signup', :maxlength => '30' %></span>
+		<div class="small_form_div">
+				<span class="cancel_form_indicator">close | x</span>
+
+				<form data-stats="submit" method="POST" action="" id="standard_form" class="standard_form small_standard_form clearfix" autocomplete="off">
+
+				<div class="form_action" style="display:none;"><%= form_action_url('rewards signup') %>.json</div>
+
+				
+
+				<div class="input first full">
+					<input id="email" type="email" value="" class="email required" name="email"  placeholder="email..." autocomplete="off">
+				</div>
+
+				<div class="input submit_div">
+					<input id="submit_email" type="submit" value=""/>
+			    </div>
+
+
+			    <div class="clearfix"></div>
+				
+				<span class="form_text"><%= render :textual => 'footer_form_text', :default => '20% off all products for members.', :maxlength => '30' %></span>
+
+			</form>
+			<!-- This will be appended by js on success -->
+			<!-- <div id="thanksDiv"><div class="custom_background_color"><span>Thanks for signing up!</span></div></div> -->
+
+			<!-- <div id="form_focus" class="form_focus"></div> -->
+		</div>
+	</div>
+
+	<div class="footer_section">
+		<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_3', :default => 'advertisement', :maxlength => '30' %></span>
+		<div class="advert_image_div">
+			<%= render :image => 'footer_panel_image_3', :default => "/templates/retail_showcase_768x1024/img/placeholders/advertise_217x136.jpg", :width => "217", :height => "136" %>
+		</div>
+	</div>
+
+
+	<div class="logo_div">
+		<%= render :image => 'footer_panel_logo', :default => "/templates/retail_showcase_768x1024/img/placeholders/logo_217x60.png", :width => "217", :height => "60" %>
+	</div>
+</div>
