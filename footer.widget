@@ -3,6 +3,11 @@
 	<meta template="/templates/retail_showcase_768x1024/showcase_gallery.page" />
 <% end %>
 
+<% if @mode == 'edit' %>
+	<!-- include a template group stylesheet to render widget nicely -->
+	<link rel="stylesheet" href="/templates/retail_showcase_768x1024/css/blocks.css">
+<% end %>
+
 
 <div class="footer_panel">
 	<div class="footer_section">
