@@ -1,3 +1,9 @@
+<% if @mode == 'edit' || @mode == 'preview' %>
+	<!-- specify a template this widget will be rendered against in preview mode -->
+	<meta template="/templates/retail_showcase_768x1024/showcase_gallery.page" />
+<% end %>
+
+
 <div class="footer_panel">
 	<div class="footer_section">
 		<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_1', :default => 'advertisement', :maxlength => '30' %></span>
