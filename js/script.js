@@ -25,14 +25,15 @@ $(window).load(function() {
 // ----------------------------------- //
 // SCREENSAVER HIDE CALLBACK
 // ----------------------------------- //
-screensaver.on('hide', function() {
- app.init();
- setTimeout(function() {
-  	screensaver.hideLoader();
-	$('html').removeClass('preload');
- }, 250);
-});
-
+if ( ! typeof screensaver === 'undefined' ) {
+	screensaver.on('hide', function() {
+	 app.init();
+	 setTimeout(function() {
+	  	screensaver.hideLoader();
+		$('html').removeClass('preload');
+	 }, 250);
+	});
+}
 
 
 
