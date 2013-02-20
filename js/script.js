@@ -6,7 +6,9 @@ $(window).load(function() {
 	// ----------------------------------------
 	// PRELOADER CLASS REMOVAL
 	setTimeout(function(){
-  		// $('html').removeClass('preload'); // done in screensaver callback
+		if ( screensaver_bool === false ) {
+			$('html').removeClass('preload'); // otherwise done in screensaver callback
+		}
   	},800);
   	// timeout should be a fraction longer than css transitions
   	// or other timing event using the preload class trigger.
@@ -76,10 +78,11 @@ if (typeof forward !== "undefined"){
 // -------------------------- //
 // MAIN APP
 // -------------------------- //
-// $(function(){
-// 	app.init(); // done in screensaver callback
-// });
-
+if ( screensaver_bool === false ) {
+	$(function(){
+		app.init(); // otherwise done in screensaver callback
+	});
+}
 
 var app = (function(){
 	

@@ -9,7 +9,19 @@
 
 		<title><%= title %></title>
 
-		<script type="text/javascript" src="/templates/dse_screensaver/screensaver.js"></script>
+		<% unless @mode == 'edit' %>
+			<%% if param[:screensaver] == 'true' %>
+				<script type="text/javascript" src="/templates/dse_screensaver/screensaver.js"></script>
+				<script>
+					var screensaver_bool = true;
+				</script>
+			<%% else %>
+				<script>
+					var screensaver_bool = false;
+				</script>
+			<%% end %>
+		<% end %>
+
 		
 		<link rel="stylesheet" href="/templates/retail_showcase_768x1024/css/style.css">
 	    <% if @mode == 'edit' %>
