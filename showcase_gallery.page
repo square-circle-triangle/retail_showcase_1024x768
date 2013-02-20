@@ -8,6 +8,8 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
 
 		<title><%= title %></title>
+
+		<script type="text/javascript" src="/templates/dse_screensaver/screensaver.js"></script>
 		
 		<link rel="stylesheet" href="/templates/retail_showcase_768x1024/css/style.css">
 	    <% if @mode == 'edit' %>

@@ -6,16 +6,29 @@ $(window).load(function() {
 	// ----------------------------------------
 	// PRELOADER CLASS REMOVAL
 	setTimeout(function(){
-  		$('html').removeClass('preload');
+  		// $('html').removeClass('preload'); // done in screensaver callback
   	},800);
   	// timeout should be a fraction longer than css transitions
   	// or other timing event using the preload class trigger.
   	// ----------------------------------------
 
-
-	
   	
 
+});
+
+
+
+
+
+// ----------------------------------- //
+// SCREENSAVER HIDE CALLBACK
+// ----------------------------------- //
+screensaver.on('hide', function() {
+ app.init();
+ setTimeout(function() {
+  	screensaver.hideLoader();
+	$('html').removeClass('preload');
+ }, 250);
 });
 
 
@@ -63,9 +76,9 @@ if (typeof forward !== "undefined"){
 // -------------------------- //
 // MAIN APP
 // -------------------------- //
-$(function(){
-	app.init();
-});
+// $(function(){
+// 	app.init(); // done in screensaver callback
+// });
 
 
 var app = (function(){

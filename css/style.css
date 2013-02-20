@@ -406,7 +406,7 @@ a.no_linking
 	line-height: 1;
 
 	display: inline-block;
-	margin: 15px 0px 0px 23px;
+	margin: 15px 0px 0px 70px;
 
 	-webkit-font-smoothing: antialiased;
 }
@@ -916,7 +916,7 @@ a.no_linking
 	height: 30px;
 	position: absolute;
 	left: 23px;
-	top: 5px;
+	top: 12px;
 }
 
 .main_nav_icon div
