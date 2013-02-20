@@ -846,7 +846,7 @@ app.form = (function(){
   function formSuccess(){
 	  var thanksDiv = '<div id="thanksDiv"><div class="custom_background_color"><span>Thanks for signing up!</span></div></div>';
 	 	$('.small_form_div').append(thanksDiv);
-	 	app.logging_stats.log('signup', $form, '');
+	 	//app.logging_stats.log('signup', $form, '');
 	 
 		setTimeout( function(){
 		  $('#thanksDiv').remove();
@@ -1054,8 +1054,8 @@ app.form = (function(){
 
 
 
-// STATSY SEND FUNCTION
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//STATSY SEND FUNCTION
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // function sendStatsy(stream) {
 // 	var timenow = new Date().getTime() / 1000;
 //     var statsy = 	"timestamp=" + timenow +
