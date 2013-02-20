@@ -25,7 +25,7 @@ $(window).load(function() {
 // ----------------------------------- //
 // SCREENSAVER HIDE CALLBACK
 // ----------------------------------- //
-if ( ! typeof screensaver === 'undefined' ) {
+if ( typeof screensaver !== 'undefined' ) {
 	screensaver.on('hide', function() {
 	 app.init();
 	 setTimeout(function() {

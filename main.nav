@@ -1,5 +1,5 @@
 <ul id="bottom_nav_content" class="bottom_nav_content nav_animation">
 	<% @top_level_items.each_with_index do |nav_item, i| %>
-		<li class="menu_item custom_foreground_color"><a href="<%= nav_item.url %>#<%= nav_item.name %>"><%= nav_item.name %></a></li>
+		<li class="menu_item custom_foreground_color"><a href="<%= nav_item.url %>"><%= nav_item.name %></a></li>
 	<% end %>
 </ul>	
