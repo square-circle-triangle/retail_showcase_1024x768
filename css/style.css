@@ -268,7 +268,7 @@ a.no_linking
 	top: 0px;
 	left: -768px;
 	background-color: white;
-	z-index: 99999;
+	z-index: 99;
 	-webkit-transition-property: opacity, -webkit-transform;
 	-webkit-transition-delay: 0s, 1.5s;
 	-webkit-transition-duration: 1.4s, 0s;
