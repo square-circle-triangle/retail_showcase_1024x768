@@ -10,7 +10,7 @@
 		<title><%= title %></title>
 
 		<% unless @mode == 'edit' %>
-			<%% if param[:screensaver] == 'true' %>
+			<%% if param[:screensaver] && param[:screensaver] == 'true' %>
 				<script type="text/javascript" src="/templates/dse_screensaver/screensaver.js"></script>
 				<script>
 					var screensaver_bool = true;
