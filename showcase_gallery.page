@@ -10,16 +10,27 @@
 		<title><%= title %></title>
 
 		<% unless @mode == 'edit' %>
-			<%% if params['screensaver'] == 'true' %>
-				<script type="text/javascript" src="/templates/dse_screensaver/screensaver.js"></script>
-				<script>
+
+			<script>
+				var params = location.search;
+				if ( params.indexOf('screensaver=true') > -1 ) {
+
+					(function(){
+						var screensaverScript = document.createElement('script'); screensaverScript.type = 'text/javascript'; screensaverScript.async = true;
+						screensaverScript.src = "/templates/dse_screensaver/screensaver.js";
+						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(screensaverScript, s);
+					})();
+
 					var screensaver_bool = true;
-				</script>
-			<%% else %>
-				<script>
+					document.documentElement.classList.add('screensaver_showing');
+
+				} else {
+
 					var screensaver_bool = false;
-				</script>
-			<%% end %>
+
+				}
+			</script>
+
 		<% end %>
 
 		
