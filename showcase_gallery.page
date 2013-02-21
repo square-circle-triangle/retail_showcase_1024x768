@@ -15,11 +15,7 @@
 				var params = location.search;
 				if ( params.indexOf('screensaver=true') > -1 ) {
 
-					(function(){
-						var screensaverScript = document.createElement('script'); screensaverScript.type = 'text/javascript'; screensaverScript.async = true;
-						screensaverScript.src = "/templates/dse_screensaver/screensaver.js";
-						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(screensaverScript, s);
-					})();
+					document.write('<scri'+'pt src="/templates/dse_screensaver/screensaver.js"></scr'+'ipt>');
 
 					var screensaver_bool = true;
 					document.documentElement.classList.add('screensaver_showing');
