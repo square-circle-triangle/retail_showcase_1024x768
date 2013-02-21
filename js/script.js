@@ -30,6 +30,7 @@ if ( typeof screensaver !== 'undefined' ) {
 	 app.init();
 	 setTimeout(function() {
 	  	screensaver.hideLoader();
+		window.location.hash = "#";
 		$('html').removeClass('preload');
 	 }, 250);
 	});
