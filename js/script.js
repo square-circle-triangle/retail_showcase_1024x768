@@ -792,7 +792,7 @@ app.form = (function(){
 		});
 
 
-		if($form.length){
+		if($form.length === 1){
 			$form.validate({
 				/*
 				submitHandler: function(form) {
@@ -800,17 +800,22 @@ app.form = (function(){
 			    },
 			    */
 
+		    	// setting this makes validation non-lazy
+		        onkeyup: function(element) { $(element).valid(); },
+
 				// Change the default error element to <em> for easy hiding with CSS if not required
 				errorElement: "em",
 				
 				//Adds "error" class to input label
 				highlight: function(element, errorClass, validClass) {
 					toggleHighlight(element,errorClass,validClass,false);
+					$('#submit_email').removeClass('ok');
 				},
 			
 				//Removes "error" class to input label
 				unhighlight: function(element, errorClass, validClass) {
 					toggleHighlight(element,errorClass,validClass,true);
+					$('#submit_email').addClass('ok');
 				},
 
 				errorPlacement: function(error, element) {

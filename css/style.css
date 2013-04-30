@@ -710,8 +710,8 @@ a.no_linking
 
 .footer_section .title
 {
-	font-weight: 400;
-	font-size: 14px;
+	font-weight: 700;
+	font-size: 12px;
 	line-height: 1.4;
 	
 	display: inline-block;
@@ -833,6 +833,11 @@ a.no_linking
 	background-image: url(../img/submit.jpg);
 	background-repeat: no-repeat;
 	background-position: 0px -2px;
+}
+
+#submit_email.ok
+{
+	background-image: url(../img/submit_green.jpg);
 }
 
 .small_standard_form .form_text
