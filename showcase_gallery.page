@@ -51,6 +51,7 @@
 
 		<script>
 			var site_name = '<%= @page.site.name.clean %>';
+			var thank_you_statement = "<%= language_translation('form.submission_statement') %>";
 		</script>
 
 
@@ -95,6 +96,15 @@
 
 				<div class="slide_wrap">
 
+					<% if @mode == 'edit' %>
+						<div class="blocks_notes type_2 choose_controls_note">
+							<p>Optional gallery tap-left, tap-right controls:</p>
+						</div>
+					
+						<div class="choose_controls_option"><%= render :set => "tap_controls_button", :values => [ [ 'Include touch controls', "option_1" ], [ 'Exclude touch controls', "option_2" ] ] %></div>
+
+					<% end %>
+
 
 					<%= render :region => 'swipe_gallery_repeating_region', :max_repeats => 10, :elective => false do %>
 
@@ -124,16 +134,16 @@
 
 								<div class="text_panel custom_background_color nav_animation" style="<%= styleString %>">
 									
-									<span class="line_1"><%= render :textual => 'offer_top_line_', :default => 'now only', :maxlength => '15' %></span>
+									<span class="line_1"><%= render :textual => 'offer_top_line_', :default => language_translation('gallery.panel.text_1'), :maxlength => '15' %></span>
 									
 									<div class="price_div">
-										<span class="price_sign">$</span>
-										<span class="price_dollars"><%= render :textual => 'offer_dollars_', :default => '105', :maxlength => '3' %></span>
+										<span class="price_sign"><%= language_translation('gallery.panel.currency') %></span>
+										<span class="price_dollars"><%= render :textual => 'offer_dollars_', :default => language_translation('gallery.panel.dollars'), :maxlength => '3' %></span>
 										<span class="price_point">.</span>
-										<span class="price_cents"><%= render :textual => 'offer_cents_', :default => '90', :maxlength => '2' %></span>
+										<span class="price_cents"><%= render :textual => 'offer_cents_', :default => language_translation('gallery.panel.cents'), :maxlength => '2' %></span>
 									</div>
 									
-									<span class="line_2"><%= render :textual => 'offer_second_line_', :default => '* limited stock', :maxlength => '15' %></span>
+									<span class="line_2"><%= render :textual => 'offer_second_line_', :default => language_translation('gallery.panel.text_2'), :maxlength => '15' %></span>
 								</div>
 
 							<% end %>
@@ -157,9 +167,9 @@
 								
 								<div class="extra pop"><!-- option 1 -->
 									<div class="info_for_popup">
-										<span class="heading"><%= render :textual => 'poupup_heading', :default => 'Popup panel heading', :maxlength => '25' %></span>
-										<span class="sub_heading"><%= render :textual => 'poupup_sub_heading', :default => 'Product heading', :maxlength => '50' %></span>
-										<div class="copy"><%= render :textual => 'tiny_mce_text_unique_name', :type => :multi, :default => "<p>Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum.</p>" %></div>
+										<span class="heading"><%= render :textual => 'poupup_heading', :default => language_translation('gallery.popup.heading'), :maxlength => '25' %></span>
+										<span class="sub_heading"><%= render :textual => 'poupup_sub_heading', :default => language_translation('gallery.popup.product_heading'), :maxlength => '50' %></span>
+										<div class="copy"><%= render :textual => 'tiny_mce_text_unique_name', :type => :multi, :default => "<p><%= language_translation('gallery.popup.default_copy') %></p>" %></div>
 										<%= render :image => 'popup_image', :default => "/templates/retail_showcase_768x1024/img/placeholders/products_250x330.jpg", :width => "250", :height => 200..380 %>
 									</div> <!-- end info_for_popup -->
 									<%= render :image => 'extra_button_image', :default => "/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png", :width => "240", :height => "240" %>
@@ -202,6 +212,22 @@
 
 				</div> <!-- end slide_wrap -->
 
+				<% if @page.elements.detect{ |e| e.name == 'tap_controls_button' }.try(:selected) == "option_1" %>
+
+					<div class="left_control">
+						<div class="left_control_button custom_foreground_color_as_bg">
+							<div class="left_icon"></div>
+						</div>
+					</div>
+
+					<div class="right_control">
+						<div class="right_control_button custom_foreground_color_as_bg">
+							<div class="right_icon"></div>
+						</div>
+					</div>
+
+				<% end %>
+
 			</div> <!-- end gallery -->
 			
 			
@@ -236,7 +262,7 @@
 			<div class="bottom_nav nav_animation">
 				<div id="bottom_nav_trigger" class="show_menu ccsBgAni_half">
 					<div class="main_nav_icon"><div></div><div></div><div></div></div>
-					<span class="menu_title custom_foreground_color"><%= render :textual => 'main_nav_menu_title', :default => 'Main Menu', :maxlength => '30' %></span>
+					<span class="menu_title custom_foreground_color"><%= render :textual => 'main_nav_menu_title', :default => language_translation('main_menu.header'), :maxlength => '30' %></span>
 				</div>
 				
 			</div>

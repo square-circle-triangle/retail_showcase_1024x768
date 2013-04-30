@@ -12,16 +12,16 @@
 
 <div class="footer_panel">
 	<div class="footer_section">
-		<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_1', :default => 'advertisement', :maxlength => '30' %></span>
+		<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_1', :default => language_translation('footer.panel_1.header'), :maxlength => '30' %></span>
 		<div class="advert_image_div">
 			<%= render :image => 'footer_panel_image_1', :default => "/templates/retail_showcase_768x1024/img/placeholders/advertise_217x136.jpg", :width => "217", :height => "136" %>
 		</div>
 	</div>
 
 	<div class="footer_section">
-		<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_2', :default => 'loyalty rewards signup', :maxlength => '30' %></span>
+		<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_2', :default => language_translation('footer.panel_2.header'), :maxlength => '30' %></span>
 		<div class="small_form_div">
-				<span class="cancel_form_indicator">close | x</span>
+				<span class="cancel_form_indicator"><%= language_translation('footer.panel_2.close') %></span>
 
 				<form data-stats="submit" method="POST" action="" id="standard_form" class="standard_form small_standard_form clearfix" autocomplete="off">
 
@@ -30,7 +30,7 @@
 				
 
 				<div class="input first full">
-					<input id="email" type="email" value="" class="email required" name="email"  placeholder="email..." autocomplete="off">
+					<input id="email" type="email" value="" class="email required" name="email"  placeholder="<%= language_translation('footer.panel_2.email_placeholder') %>" autocomplete="off">
 				</div>
 
 				<div class="input submit_div">
@@ -40,7 +40,7 @@
 
 			    <div class="clearfix"></div>
 				
-				<span class="form_text"><%= render :textual => 'footer_form_text', :default => '20% off all products for members.', :maxlength => '30' %></span>
+				<span class="form_text"><%= render :textual => 'footer_form_text', :default => language_translation('footer.panel_2.text'), :maxlength => '30' %></span>
 
 			</form>
 			<!-- This will be appended by js on success -->
@@ -51,7 +51,7 @@
 	</div>
 
 	<div class="footer_section">
-		<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_3', :default => 'advertisement', :maxlength => '30' %></span>
+		<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_3', :default => language_translation('footer.panel_3.header'), :maxlength => '30' %></span>
 		<div class="advert_image_div">
 			<%= render :image => 'footer_panel_image_3', :default => "/templates/retail_showcase_768x1024/img/placeholders/advertise_217x136.jpg", :width => "217", :height => "136" %>
 		</div>

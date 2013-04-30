@@ -1,0 +1,28 @@
+main_menu:
+  header: "翻译"
+
+gallery:
+  panel:
+    text_1: "翻译"
+    currency: "翻译"
+    dollars: "翻译"
+    cents: "翻译"
+    text_2: "翻译"
+  popup:
+    heading: "翻译"
+    product_heading: "翻译"
+    default_copy: "翻译"
+
+footer:
+  panel_1:
+    header: "翻译"
+  panel_2:
+    header: "翻译"
+    email_placeholder: "翻译"
+    text: "翻译"
+    close: "翻译"
+  panel_3:
+    header: "翻译"
+
+form:
+  submission_statement: "翻译"

@@ -854,7 +854,10 @@ app.form = (function(){
 
 
   function formSuccess(){
-	  var thanksDiv = '<div id="thanksDiv"><div class="custom_background_color"><span>Thanks for signing up!</span></div></div>';
+	  var thanksDiv = '<div id="thanksDiv"><div class="custom_background_color"><span>' +
+	  	  					thank_you_statement +
+	  	  					'</span></div></div>';
+	  	  					
 	 	$('.small_form_div').append(thanksDiv);
 	 	//app.logging_stats.log('signup', $form, '');
 	 

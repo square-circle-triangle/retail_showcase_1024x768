@@ -1104,6 +1104,72 @@ a.no_linking
 
 
 
+.left_control,
+.right_control
+{
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+}
+
+
+.left_control
+{
+	left: 0px;
+}
+
+.right_control
+{
+	right: 0px;
+}
+
+
+.left_control_button,
+.right_control_button
+{
+	width: 60px;
+	height: 60px;
+	border-radius: 40px;
+	position: absolute;
+	top: 30px;
+}
+
+.left_control_button
+{
+	left: 23px;
+}
+
+.right_control_button
+{
+	right: 23px;
+}
+
+	
+.left_icon,
+.right_icon
+{
+	width: 16px;
+	height: 29px;
+	position: absolute;
+	top: 15px;
+}
+
+.left_icon
+{
+	background-image: url(../img/left_white.png);
+	background-repeat: no-repeat;
+	left: 19px;
+}
+
+.right_icon
+{
+	background-image: url(../img/right_white.png);
+	background-repeat: no-repeat;
+	right: 19px;
+}
+
 
 
 

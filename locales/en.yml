@@ -1,0 +1,28 @@
+main_menu:
+  header: "Main Menu"
+
+gallery:
+  panel:
+    text_1: "now only"
+    currency: "$"
+    dollars: "105"
+    cents: "90"
+    text_2: "* limited stock"
+  popup:
+    heading: "Popup panel heading"
+    product_heading: "Product heading"
+    default_copy: "Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum."
+
+footer:
+  panel_1:
+    header: "advertisement"
+  panel_2:
+    header: "loyalty rewards signup"
+    email_placeholder: "email..."
+    text: "20% off all products for members."
+    close: "close | x"
+  panel_3:
+    header: "advertisement"
+
+form:
+  submission_statement: "Thanks for signing up!"
