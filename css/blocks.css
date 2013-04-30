@@ -240,6 +240,7 @@ body.edit .text-region-wrapper input[disabled="disabled"]
 body.edit .gallery .text_panel
 {
 	height: 201px;
+	top: 35px;
 }
 
 body.edit .gallery .text_panel .price_div
@@ -322,6 +323,18 @@ body.edit #bottom_nav_content
 	position: absolute;
 	top: 270px;
 	left: 0px;
+}
+
+.panel_note
+{
+	position: relative;
+	top: -20px;
+	left: 0px;
+}
+
+.choose_panel_option
+{
+	margin-top: -17px;
 }
 
 .choose_extras_option
@@ -511,6 +524,36 @@ body.edit .small_standard_form .form_text .editable_region
 	width: 177px;
 }
 
+body.edit .bottom_nav_base_bar
+{
+	display: none;
+}
+
+body.edit .left_control,
+body.edit .right_control
+{
+	display: none;
+}
+
+
+body.edit .panel_color
+{
+	/*width: 160px;*/
+	height: 30px;
+	position: absolute;
+	top: 12px;
+	left: 120px;
+}
+
+body.edit .panel_color .editable_region
+{
+	width: 149px;
+}
+
+body.edit .panel_color input[disabled="disabled"]
+{
+	display: none;
+}
 
 
 
