@@ -95,7 +95,7 @@
 				<div class="slide_wrap">
 
 
-					<% render :region => 'swipe_gallery_repeating_region', :max_repeats => 10, :elective => false do %>
+					<%= render :region => 'swipe_gallery_repeating_region', :max_repeats => 10, :elective => false do %>
 
 
 						<div class="gallery_item slide left">
@@ -150,7 +150,7 @@
 							<% if parent.elements.detect{ |e| e.name == 'extras_button' }.try(:selected) == "option_2" || @mode == 'edit' %>
 
 								<div class="extra link"><!-- option 2  -->
-									<% render :link => "extra_link", :text_editable => false, :link_value => '#', :link_attributes => { :class => "extra_link" } do %>
+									<%= render :link => "extra_link", :text_editable => false, :link_value => '#', :link_attributes => { :class => "extra_link" } do %>
 										<%= render :image => 'extra_button_image_with_link', :default => "/templates/retail_showcase_768x1024/img/placeholders/extra_240x240.png", :width => "240", :height => "240" %>
 									<% end %>
 								</div>
