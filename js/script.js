@@ -224,6 +224,9 @@ app.main_navigation = (function(){
 			app.feedback.go(_this);
 			if ( ! _this.hasClass('open') ) {
 				_this.addClass('open');
+				setTimeout(function(){
+					_this.addClass('fully_open');
+				},500);
 				animateItems.css('-webkit-transform', ('rotate(0deg) translate(0px, -'+adjustmentHeight+'px) scale(1) translateZ(0px)'));
 				baseBar.css('-webkit-transform', ('rotate(0deg) translate(0px, -5px) scale(1) translateZ(0px)'));
 				if (topNav.hasClass('open')) {
@@ -235,6 +238,7 @@ app.main_navigation = (function(){
 			} else {
 				clearTimeout(closeNavTimeout);
 				_this.removeClass('open');
+				_this.removeClass('fully_open');
 				animateItems.css('-webkit-transform', 'rotate(0deg) translate(0px, 0px) scale(1) translateZ(0px)');
 				baseBar.css('-webkit-transform', ('rotate(0deg) translate(0px, 0px) scale(1) translateZ(0px)'));
 			}
@@ -243,12 +247,16 @@ app.main_navigation = (function(){
 		$('#bottom_nav_content').on('click', 'a', function(e){
 			e.preventDefault();
 	        var _this = $(this);
-	        app.feedback.go( _this.parent() );
-	        $('html').addClass('preunload');
-	        var myLink = _this.attr('href');
-	        setTimeout(function(){
-	             window.location.href = myLink;
-	        },1500);
+
+	        if ( navTrigger.hasClass('fully_open') ) {
+		        app.feedback.go( _this.parent() );
+		        $('html').addClass('preunload');
+		        var myLink = _this.attr('href');
+		        setTimeout(function(){
+		             window.location.href = myLink;
+		        },1500);
+		    }
+
 		});
 
 			
