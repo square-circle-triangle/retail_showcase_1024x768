@@ -240,7 +240,7 @@ app.main_navigation = (function(){
 			}
 		});
 
-		$('#bottom_nav_content').on(eventType_global, 'a', function(e){
+		$('#bottom_nav_content').on('click', 'a', function(e){
 			e.preventDefault();
 	        var _this = $(this);
 	        app.feedback.go( _this.parent() );
