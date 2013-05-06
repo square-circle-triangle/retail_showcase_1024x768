@@ -1,28 +1,28 @@
 main_menu:
-  header: "翻译"
+  header: "主選單"
 
 gallery:
   panel:
-    text_1: "翻译"
-    currency: "翻译"
-    dollars: "翻译"
-    cents: "翻译"
-    text_2: "翻译"
+    text_1: "現在只要"
+    currency: "TWD$"
+    dollars: "1500"
+    cents: ""
+    text_2: "* 數量有限"
   popup:
-    heading: "翻译"
-    product_heading: "翻译"
-    default_copy: "翻译"
+    heading: "模態窗口標題"
+    product_heading: "產品標題"
+    default_copy: "產品資訊"
 
 footer:
   panel_1:
-    header: "翻译"
+    header: "廣告"
   panel_2:
-    header: "翻译"
-    email_placeholder: "翻译"
-    text: "翻译"
-    close: "翻译"
+    header: "立即註冊成為優惠活動會員"
+    email_placeholder: "電子郵件地址"
+    text: "會員可享全面8折優惠"
+    close: "關閉 | x"
   panel_3:
-    header: "翻译"
+    header: "廣告"
 
 form:
-  submission_statement: "翻译"
+  submission_statement: "感謝您的加入！"
