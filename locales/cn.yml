@@ -4,7 +4,7 @@ main_menu:
 gallery:
   panel:
     text_1: "現在只要"
-    currency: "TWD$"
+    currency: "NT$"
     dollars: "1500"
     cents: ""
     text_2: "* 數量有限"
