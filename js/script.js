@@ -93,6 +93,7 @@ var app = (function(){
 
 
 	function init(){
+		app.scaleTextToFit.init();
 		app.preventLinks.init();
 		app.main_navigation.init();
 		app.top_navigation.init();
@@ -161,7 +162,46 @@ var app = (function(){
 
 
 
+// ----------------------------------------------------- //
+// SCALE TEXT TO FIT
+// ----------------------------------------------------- //
 
+app.scaleTextToFit = (function(){
+	
+	var _self = {};
+
+
+	function init(){
+		scale( $('.price_field'), 225, 90 );
+	} // end init
+
+
+
+	function scale(elements, maxWidth, startFontSizePx) {
+		
+		elements.each(function(i){
+			var _this = $(this);
+			var fs = startFontSizePx;
+			for (i=0; i<startFontSizePx; i++) {
+				if (_this.width() > maxWidth){
+					fs -= 1;
+					_this.css('font-size', (fs + 'px'));
+				} else {
+					return;
+				}
+			}
+		});
+
+	}
+
+
+	
+	
+	_self = {
+		init : init
+	};
+	return _self;
+})();
 
 
 

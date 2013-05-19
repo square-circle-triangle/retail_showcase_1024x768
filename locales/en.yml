@@ -4,9 +4,7 @@ main_menu:
 gallery:
   panel:
     text_1: "now only"
-    currency: "$"
-    dollars: "105"
-    cents: "90"
+    price_field: "$105.99"
     text_2: "* limited stock"
   popup:
     heading: "Popup panel heading"

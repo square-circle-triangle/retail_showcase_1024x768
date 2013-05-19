@@ -1,0 +1,26 @@
+main_menu:
+  header: "主选单"
+
+gallery:
+  panel:
+    text_1: "只有现在"
+    price_field: "NT$1500"
+    text_2: "库存有限"
+  popup:
+    heading: "荧幕弹出的标题"
+    product_heading: "产品标题"
+    default_copy: ""
+
+footer:
+  panel_1:
+    header: "广告"
+  panel_2:
+    header: "加入会员"
+    email_placeholder: "电子邮件"
+    text: "所有会员8折"
+    close: "关"
+  panel_3:
+    header: "广告"
+
+form:
+  submission_statement: "谢谢注册"

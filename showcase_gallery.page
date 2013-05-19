@@ -137,10 +137,7 @@
 									<span class="line_1"><%= render :textual => 'offer_top_line_', :default => language_translation('gallery.panel.text_1'), :maxlength => '15' %></span>
 									
 									<div class="price_div">
-										<span class="price_sign"><%= language_translation('gallery.panel.currency') %></span>
-										<span class="price_dollars"><%= render :textual => 'offer_dollars_', :default => language_translation('gallery.panel.dollars'), :maxlength => '3' %></span>
-										<span class="price_point">.</span>
-										<span class="price_cents"><%= render :textual => 'offer_cents_', :default => language_translation('gallery.panel.cents'), :maxlength => '2' %></span>
+										<span class="price_field"><%= render :textual => 'price_field', :default => language_translation('gallery.panel.price_field'), :maxlength => '20' %></span>
 									</div>
 									
 									<span class="line_2"><%= render :textual => 'offer_second_line_', :default => language_translation('gallery.panel.text_2'), :maxlength => '15' %></span>

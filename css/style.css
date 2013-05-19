@@ -1010,10 +1010,25 @@ a.no_linking
 	border-bottom: 4px dotted white;
 	display: inline-block;
 	margin-top: 5px;
+	line-height: 125px;
 	/*text-align: left;*/
 }
 
-.gallery .price_div .price_sign
+.gallery .price_div .price_field
+{
+	font-weight: 700;
+	font-size: 90px;
+	line-height: 1;
+	color: white;
+
+	display: inline-block;
+	margin-top: 4px;
+	letter-spacing: -3px;
+
+	-webkit-font-smoothing: antialiased;
+}
+
+/*.gallery .price_div .price_sign
 {
 	font-weight: 700;
 	font-size: 40px;
@@ -1058,7 +1073,7 @@ a.no_linking
 
 	-webkit-font-smoothing: antialiased;
 }
-
+*/
 
 .gallery .extra
 {

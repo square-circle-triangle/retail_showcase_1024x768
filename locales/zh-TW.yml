@@ -1,0 +1,26 @@
+main_menu:
+  header: "主選單"
+
+gallery:
+  panel:
+    text_1: "只有現在"
+    price_field: "NT$1500"
+    text_2: "庫存有限"
+  popup:
+    heading: "螢幕彈出的標題"
+    product_heading: "產品標題"
+    default_copy: ""
+
+footer:
+  panel_1:
+    header: "廣告"
+  panel_2:
+    header: "加入會員"
+    email_placeholder: "電子郵件"
+    text: "所有會員8折所有會員8折"
+    close: "關"
+  panel_3:
+    header: "廣告"
+
+form:
+  submission_statement: "謝謝註冊"
