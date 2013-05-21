@@ -1,5 +1,5 @@
 <%# Fetch all nav items (pages) %>
-<% nav_items = @page.site.pages.all %>
+<% nav_items = @current_page.site.pages.all %>
 
 <%# Sort nav items by "name" then bring index and home to the top %>
 <% nav_items.sort_by! { |ni| ni.name.downcase } %>
