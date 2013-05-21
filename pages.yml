@@ -11,3 +11,7 @@ pages:
   "Services Page location 2":
     description: "Product Listing"
     template: showcase_gallery.page
+widgets:
+  "footer":
+  description: "site footer widget"
+  template: "footer.widget"
