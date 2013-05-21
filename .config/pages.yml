@@ -13,5 +13,5 @@ pages:
     template: showcase_gallery.page
 widgets:
   "footer":
-  description: "site footer widget"
-  template: "footer.widget"
+    description: "site footer widget"
+    template: "footer.widget"
