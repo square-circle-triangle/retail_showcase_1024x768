@@ -1,0 +1,17 @@
+pages:
+  "Product Page location 1":
+    description: "Product Page"
+    template: showcase_gallery.page
+  "Services Page location 1":
+    description: "Product Listing"
+    template: showcase_gallery.page
+  "Product Page location 2":
+    description: "Product Page"
+    template: showcase_gallery.page
+  "Services Page location 2":
+    description: "Product Listing"
+    template: showcase_gallery.page
+widgets:
+  "footer":
+    description: "site footer widget"
+    template: "footer.widget"
