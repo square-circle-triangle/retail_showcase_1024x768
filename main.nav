@@ -1,7 +1,17 @@
+<%# Fetch all nav items (pages) %>
+<% nav_items = @page.site.pages.all %>
+
+<%# Sort nav items by "name" then bring index and home to the top %>
+<% nav_items.sort_by! { |ni| ni.name.downcase } %>
+<% sorted_nav_items = nav_items.inject([]) do |memo, ni| %>
+	<% (ni.name.downcase == 'index' || ni.name.downcase == 'home') ? memo.unshift(ni) : memo.push(ni) %>
+	<% memo %>
+<% end %>
+
 <ul id="bottom_nav_content" class="bottom_nav_content nav_animation">
-	<% @top_level_items.each_with_index do |nav_item,i| %>
+	<% sorted_nav_items.each_with_index do |nav_item,i| %>
 		<% if i < 6 %>
 			<li class="menu_item custom_foreground_color"><a href="<%= nav_item.url %>"><%= nav_item.name %></a></li>
 		<% end %>
 	<% end %>
-</ul>	
+</ul>
