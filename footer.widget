@@ -25,7 +25,7 @@
 
 				<form data-stats="submit" method="POST" action="" id="standard_form" class="standard_form small_standard_form clearfix" autocomplete="off">
 
-				<div class="form_action" style="display:none;"><% form_action_url("signup") %>.json</div>
+				<div class="form_action" style="display:none;"><%= form_action_url("signup") %>.json</div>
 
 				
 
