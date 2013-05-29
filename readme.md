@@ -1,0 +1,1 @@
+Retail Showcase templates, portrait suited to touch screens with screen resolutions of 768x1024
