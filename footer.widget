@@ -10,6 +10,7 @@
 <% end %>
 
 
+
 <div class="footer_panel">
 	<div class="footer_section">
 		<span class="title custom_foreground_color"><%= render :textual => 'footer_section_title_1', :default => language_translation('footer.panel_1.header'), :maxlength => '30' %></span>
