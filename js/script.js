@@ -292,9 +292,9 @@ app.main_navigation = (function(){
 		        app.feedback.go( _this.parent() );
 		        $('html').addClass('preunload');
 		        var myLink = _this.attr('href');
-		        setTimeout(function(){
+		        //setTimeout(function(){
 		             window.location.href = myLink;
-		        },1500);
+		        //},1500);
 		    }
 
 		});
