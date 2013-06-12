@@ -980,7 +980,7 @@ a.no_linking
 {
 	font-weight: 400;
 	font-size: 38px;
-	line-height: 1;
+	line-height: 38px;
 	color: white;
 
 	display: block;
@@ -996,7 +996,7 @@ a.no_linking
 {
 	font-weight: 400;
 	font-size: 38px;
-	line-height: 1;
+	line-height: 38px;
 	color: white;
 
 	display: inline-block;

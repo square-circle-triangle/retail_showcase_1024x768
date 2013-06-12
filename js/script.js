@@ -175,6 +175,9 @@ app.scaleTextToFit = (function(){
 		scale( $('.price_field'), 225, 90 );
 		scale( $('.scale_text'), 225, 38 );
 
+		// we need line 1 to be a block element
+		$('.line_1.scale_text').css('display','block');
+
 		// opacity was 0 so scaling does not flash on screen
 		$('.price_field, .scale_text').animate({
 			'opacity' : '1'
