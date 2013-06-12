@@ -145,7 +145,7 @@
 
 							<% end %>
 
-
+ 
 
 							<% if @mode == 'edit' %>
 								<div class="blocks_notes type_2 extras_note">
