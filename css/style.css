@@ -983,7 +983,7 @@ a.no_linking
 	line-height: 38px;
 	color: white;
 
-	display: block;
+	display: inline-block;
 	min-height: 38px;
 	height: 38px;
 
