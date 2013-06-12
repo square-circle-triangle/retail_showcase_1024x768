@@ -217,7 +217,7 @@ body.edit .bottom_nav
 body.edit .gallery .text_panel .line_1,
 body.edit .gallery .text_panel .line_2
 {
-	font-size: 23px;
+	font-size: 21px;
 	margin-top: 20px;
 }
 
@@ -558,7 +558,8 @@ body.edit .panel_color input[disabled="disabled"]
 
 body.edit .gallery .price_div .price_field 
 {
-    font-size: 40px;
+    font-size: 24px;
+    display: block;
 }
 
 body.edit .gallery .price_div .price_field,
