@@ -561,4 +561,20 @@ body.edit .gallery .price_div .price_field
     font-size: 40px;
 }
 
+body.edit .gallery .price_div .price_field,
+body.edit .gallery .scale_text
+{
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
 

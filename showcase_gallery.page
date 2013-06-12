@@ -134,13 +134,13 @@
 
 								<div class="text_panel custom_background_color nav_animation" style="<%= styleString %>">
 									
-									<span class="line_1"><%= render :textual => 'offer_top_line_', :default => language_translation('gallery.panel.text_1'), :maxlength => '15' %></span>
+									<span class="line_1 scale_text"><%= render :textual => 'offer_top_line_', :default => language_translation('gallery.panel.text_1'), :maxlength => '20' %></span>
 									
 									<div class="price_div">
 										<span class="price_field"><%= render :textual => 'price_field', :default => language_translation('gallery.panel.price_field'), :maxlength => '20' %></span>
 									</div>
 									
-									<span class="line_2"><%= render :textual => 'offer_second_line_', :default => language_translation('gallery.panel.text_2'), :maxlength => '15' %></span>
+									<span class="line_2 scale_text"><%= render :textual => 'offer_second_line_', :default => language_translation('gallery.panel.text_2'), :maxlength => '20' %></span>
 								</div>
 
 							<% end %>

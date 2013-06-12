@@ -173,9 +173,10 @@ app.scaleTextToFit = (function(){
 
 	function init(){
 		scale( $('.price_field'), 225, 90 );
+		scale( $('.scale_text'), 225, 38 );
 
 		// opacity was 0 so scaling does not flash on screen
-		$('.price_field').animate({
+		$('.price_field, .scale_text').animate({
 			'opacity' : '1'
 		},200);
 		

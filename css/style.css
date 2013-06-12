@@ -1005,6 +1005,12 @@ a.no_linking
 	-webkit-font-smoothing: antialiased;
 }
 
+.gallery .scale_text
+{
+	opacity: 0;
+	white-space: nowrap;
+}
+
 .gallery .text_panel .price_div
 {
 	width: 225px;
@@ -1023,6 +1029,7 @@ a.no_linking
 	font-size: 90px;
 	line-height: 1;
 	color: white;
+	white-space:nowrap;
 
 	/* opacity will be animated back to 1 once resize js completes */
 	opacity: 0;
