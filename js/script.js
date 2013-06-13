@@ -204,7 +204,6 @@ app.scaleTextToFit = (function(){
 
 	}
 
-
 	
 	
 	_self = {
